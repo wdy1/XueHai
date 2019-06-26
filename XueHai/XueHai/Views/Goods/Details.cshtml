@@ -1,0 +1,261 @@
+﻿@model Models.Goods
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Html.DisplayFor(model => model.GoodsName)</title>
+    <link href="~/content/wdy/hide1.css" rel="stylesheet" />
+    <link href="~/content/wdy/detail1.css" rel="stylesheet" />
+    <link href="~/content/wdy/hide1.css" rel="stylesheet" />
+    <script src="~/JS/wow.js"></script>
+    <script src="~/JS/jquery-1.7.2.js"></script>
+    <link href="~/content/wdy/home-nav.css" rel="stylesheet" />
+    <link href="~/content/wdy/goumai.css" rel="stylesheet" />
+    <script src="~/js/homeajax.js"></script>
+
+    
+</head>
+<body>
+    <div class="wrapper">
+        @*导航栏*@
+        <div class="top-nav-wrap">
+            <div class="top-nav">
+                <ul class="nav-left">
+                    <li class="top-nav-menu china" id="j_china">
+                        <span class="c-span">中国大陆</span>
+                        <span class="bg-pic xsj-pic"></span>
+                        <ul class="cl" style="">
+                            <li><a href="#">北京</a></li>
+                            <li><a href="#">上海</a></li>
+                            <li><a href="#">广州</a></li>
+                            <li><a href="#">浙江</a></li>
+                            <li><a href="#">江西</a></li>
+                        </ul>
+                    </li>
+                    @if (Session["Users_id"] == null)
+                    {
+                        <li class="top-nav-menu login-sign">
+                            <a href="@Url.Action("Login","UserInfo")" class="login">亲，请登录</a>
+                            <a href="@Url.Action("Register","UserInfo")" class="sign">免费注册</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a href="@Url.Action("","")" style="float:left;" class="UserName">@Session["UserName"].ToString()</a> <a href="@Url.Action("ZhuXiao","UserInfo")" style="float:left;" class="zhuxiao">注销</a> </li>
+                    }
+
+                    <li class="top-nav-menu my-taobao">
+                        <a href="#">成为会员</a>
+                    </li>
+                    <li class="top-nav-menu my-taobao">
+                        <a href="@Url.Action("index","Home")">首页</a>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li class="top-nav-menu" id="j_home">
+                        <a href="@Url.Action("UserCenter","UserInfo" , new {Users_id = Session["Users_id"]})">学者之屋</a>
+                        <span class="bg-pic xsj-pic"></span>
+                        <ul class="home">
+                            <li><a href="@Url.Action("OrderDetails","Mall")">我的订单</a></li>
+                            <li><a href="#">我的评论</a></li>
+                            <li><a href="#">我的足迹</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-nav-menu">
+                        <a href="@Url.Action("Shopcar","Mall")">
+                            <span class="bg-pic shopCar-pic"></span>
+                            <span>购物车</span>
+                        </a>
+                        <span class="bg-pic xsj-pic"></span>
+                    </li>
+                    <li class="top-nav-menu like" id="j_like">
+                        <a href="#">
+                            <span class="bg-pic like-pic"></span>
+                            <span>收藏夹</span>
+                        </a>
+                        <span class="bg-pic xsj-pic"></span>
+                        <ul class="fav">
+                            <li><a href="#">收藏商品</a></li>
+                            <li><a href="#">收藏视频</a></li>
+                        </ul>
+                    </li>
+                    @*<li class="top-nav-menu goods">
+                            <a href="#">商品分类</a>
+                        </li>*@
+                    <li class="top-nav-menu cut-off">
+                        <span>|</span>
+                    </li>
+                    <li class="top-nav-menu sells">
+                        <a href="#">
+                            <span class="c-span">卖家中心</span>
+                            <span class="bg-pic xsj-pic"></span>
+                        </a>
+                    </li>
+                    <li class="top-nav-menu">
+                        <a href="#">
+                            <span class="c-span cutsomer">联系客服</span>
+                            <span class="bg-pic xsj-pic"></span>
+                        </a>
+                    </li>
+                    <li class="top-nav-menu web-nav">
+                        <a href="#">
+                            <span class="bg-pic web-nav-pic"></span>
+                            <span>网站导航</span>
+                        </a>
+                        <span class="bg-pic xsj-pic"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="ad-wrap">
+                <div class="ad">
+                    <img src="~/Images/ggao/11.jpg" alt="广告图片" />
+                </div>
+            </div>
+        </div>
+        @*搜索*@
+        <div class="search-wrap">
+            <div class="search-con">
+                <div class="logo-box"></div>
+                <div class="search-box">
+                    <div class="search-t">
+                        <div class="search-panel">
+                            <a href="#" class="sousuo"></a>
+                            <form method="get" action="/Search/Index">
+                                <div class="btn">
+                                    <button class="submit">搜索</button>
+                                </div>
+                                <div class="search-inp-box">
+                                    <div class="search-inp">
+                                        <input name="search" type="text" placeholder="好读书、读好书、书读好" class="input-search">
+                                    </div>
+                                </div>
+                            </form>
+                            <a href="#" class="camera"></a>
+                        </div>
+                    </div>
+                    <div class="search-bl">
+                        <a href="#">软件书籍</a>
+                        <a href="#">考研</a>
+                        <a href="#">英语</a>
+                        <a href="#">数学</a>
+                        <a href="#">政治</a>
+                        <a href="#">英语视频</a>
+                        <a href="#">计算机视频</a>
+                    </div>
+                </div>
+                <div class="ewm-box">
+                    <a href="#" class="phone">手机app</a>
+                    <a href="#" class="code"></a>
+                    <a href="#" class="close">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        @using (Html.BeginForm("jrgwc", "Mall", FormMethod.Post))
+        {
+            <div class="detail">
+                <div class="left">
+                    <img src="@Html.DisplayFor(model => model.GoodsImage)" alt="" />
+                    <span><a href="#"><i class="a1"></i>分享</a></span>
+                    <span><a href="@Url.Action("SC","Like",new { id=Model.Goods_id})"><i class="a2"></i>收藏</a></span>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h1 class="jianjie" title="@Html.DisplayFor(model => model.GoodsJianjie)"><span>学海自营</span>@Html.DisplayFor(model => model.GoodsJianjie)</h1>
+                        <p class="zuozhe"><span>&nbsp;&nbsp;作者：俞敏洪&nbsp;&nbsp;</span><span>&nbsp;&nbsp;出版社：世界图书出版社&nbsp;&nbsp;</span><span>&nbsp;&nbsp;出版时间：2018年12月</span></p>
+                        <h3><a href="@Url.Action("Index","Comment",new { goodsid = Model.Goods_id})" style="font-size:16px;">评论</a>&nbsp;&nbsp;480条</h3>
+                        <div class="price">
+                            <h4><span class="color">学海价 </span><a href="#" class="color">降价通知</a></h4>
+                            <div class="price1">￥@Html.DisplayFor(model => model.Price)&nbsp;&nbsp;<span>￥99.99</span></div>
+                        </div>
+                        <div class="cuxiao">
+                            <div class="left1">促销</div>
+                            <div class="right1">
+                                <div id="list">
+                                    <div class="clearfix">
+                                        <b>电子书加价购</b>
+
+                                    </div>
+                                    <div class="clearfix">
+                                        <b>满额减</b>
+
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="sub">
+                                        <i class="icon" style="color:rgba(0, 0, 0,0.5);">
+                                            促销不可多选，请在购物车选择该单品能享受的促销
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="left1 pei">配送至</div>
+                            <div class="xue"></div>
+                        </div>
+                        <div class="a1">
+                            <div class="left1 fu">服务</div>
+                            <div class="xue" style="color:rgba(0, 0, 0,0.5);">由‘学海’发货，并提供售后服务。21:45前完成下单，预计明天可送达。</div>
+                        </div>
+                        <div class="a1">
+                            <div class="left1 fu">详情</div>
+                            <div class="xue" style="color:rgba(0, 0, 0,0.5);">@Html.DisplayFor(model => model.GoodsDetails)</div>
+                        </div>
+                        <div class="gselect">
+                            <div class="snum">
+                                <span>数量：&nbsp;&nbsp;</span>
+                                @Html.TextBoxFor(model => Model.Count, new { @class = "txtbox", id = "txtnum", value = "1" })
+                                <div id="up" class="up">+</div>
+                                <div id="down" class="down">-</div>
+                            </div>
+                            <input name="Goods_id" value="@Model.Goods_id" style="display:none"/>
+                            <div class="tbutton">
+                                <button id="jrgwc" class="btnjrgwc" style="border: none; height: 40px; width: 120px; color: white; background-color: #DD3B44">加入购物车</button>
+                                <button id="ljgm" name="ljgm" class="btnljgm" style="border: none; height: 40px; width: 120px; color: white; background-color: #DD3B44" type="submit" value="0">立即购买</button>
+                            </div>
+                        </div>
+                        <div class="showkucun">
+                            <span>库存：&nbsp;&nbsp;</span><label id="kucun">@Model.Count</label><span>&nbsp;&nbsp;件</span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fuwu">
+
+                </div>
+
+            </div>
+        }
+        
+    </div>
+    <script type="text/javascript">
+    var value = 1;
+    $('#txtnum').val(value);
+    $("#up").click(function() {
+        var value = parseInt($('#txtnum').val()) + 1;
+        if (value >= $('#kucun').text() * 1) {
+            value = $('#kucun').text();
+        }
+        $('#txtnum').val(value);
+    });
+    $("#down").click(function() {
+        var value = parseInt($('#txtnum').val()) - 1;
+        if (value <= 0) {
+            value = 1;
+        }
+        $('#txtnum').val(value);
+    });
+    $("#ljgm").click(function () {
+        $('#ljgm').val(1);
+    });
+    </script>
+    <script src="~/js/hide1.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Models.Comments>
+
+@{
+    ViewBag.Title = "ScIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ScIndex</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ComContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaiseNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Goods.GoodsName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Post.PostTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserInfo.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Video.VideoName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComContent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaiseNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Goods.GoodsName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Post.PostTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserInfo.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Video.VideoName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ComID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ComID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ComID })
+        </td>
+    </tr>
+}
+
+</table>

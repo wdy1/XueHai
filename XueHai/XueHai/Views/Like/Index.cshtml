@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Models.FavoriteGoods>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FavoriteType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Goods.GoodsName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserInfo.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FavoriteType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Goods.GoodsName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserInfo.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FavoriteID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FavoriteID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FavoriteID })
+        </td>
+    </tr>
+}
+
+</table>

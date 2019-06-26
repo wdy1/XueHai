@@ -1,0 +1,102 @@
+﻿@charset "utf-8";
+/*@ft_c:#2c3e50;
+@ft_c_h:#428bca;*/
+/*
+    * Busy 收集 整理
+ */
+/*雅虎（YUI 3）reset*/
+/*Normalize.css*/
+/*图片轮播部分*/
+.imgListcontent {
+  position: relative;
+  width: 208px;
+  height: 200px;
+  z-index: 10;
+} 
+.imgListcontent .scroll a {
+  width: 25px;
+  height: 25px;
+  line-height: 200px;
+  overflow: hidden;
+  margin: 0;
+  display: block;
+  background: url(../../Images/left_right.png) no-repeat;
+  position: absolute;
+  background-size: 25px 50px;
+  top:88px;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease;
+}
+.imgListcontent .scroll .prev {
+  margin: 0px 10px;
+  background-position: 0px 0px;
+  position: absolute;
+  left: 0;
+}
+.imgListcontent .scroll .next {
+  margin: 0px 10px;
+  background-position: 0px -25px;
+  position: absolute;
+  right: 0;
+}
+.imgListcontent:hover .prev,
+.imgListcontent:hover .next {
+  opacity: 0.7;
+  filter: alpha(opacity=25);
+}
+.imgListcontent:hover .prev:hover,
+.imgListcontent:hover .next:hover {
+  opacity: 1;
+  filter: alpha(opacity=50);
+}
+.imgListcontent .imgList li {
+  width: 208px;
+  height: 200px;
+  float: left;
+  position: absolute;
+  top: 0;
+  list-style: none;
+}
+.imgListcontent .imgList a #imgList1,
+.imgListcontent .imgList a #imgList2,
+.imgListcontent .imgList a #imgList3,
+.imgListcontent .imgList a #imgList4,
+.imgListcontent .imgList a #imgList5 {
+  width: 208px;
+  height: 200px;
+  margin: 0;
+  cursor: default;
+  display: block;
+  position:relative;
+  top:-20px;
+}
+.imgListcontent .nav {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+.imgListcontent .nav li {
+  margin: 0 2px;
+  display: inline-block;
+}
+.imgListcontent .paging li a {
+  background: url(../../Images/dot1.png) no-repeat;
+  background-position: 0 -18px;
+  display: block;
+  width: 22px;
+  height: 17px;
+  overflow: hidden;
+  cursor: pointer;
+  text-indent: -50em;
+  position:relative;
+  top:-10px;
+}
+.imgListcontent .paging li a.flex-active,
+.imgListcontent .paging li.active a {
+  background-position: 0 2px;
+  margin: 3px 0px;
+}

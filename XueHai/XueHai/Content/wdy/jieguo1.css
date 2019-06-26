@@ -1,0 +1,94 @@
+﻿.jieguo {
+    height:250px;
+    width:1000px;
+    margin:25px auto;
+    background-color:#fff;
+    display:flex;
+}
+.jieguo:hover{
+    background-color:#f8f8f8;
+}
+.jieguo a img{
+    height:200px;
+    width:200px;
+    margin:25px 25px;
+}
+.jieguo .content{
+    height:100%;
+    width:750px;
+}
+.jieguo .title{
+    height:20px;
+    width:710px;
+    line-height:20px;
+    margin:25px 20px 10px;
+    max-height:60px;
+    font-size:16px;
+   
+}
+.jieguo .title a{
+     color:#1a66b3;
+}
+ .jieguo .title a:hover{
+     color:#fa5000;
+}
+.jieguo .price{
+    font-size:24px;
+    color:#f40;
+    height:50px;
+    line-height:50px;
+    margin:35px 20px 10px;
+}
+ .jieguo .price span{
+    color:#aaa;
+    font-size:14px;
+    text-decoration:line-through;
+}
+.jieguo .Name{
+    color:#f40;
+    font-size:14px;
+    height:20px;
+    line-height:20px;
+    margin:0 20px;
+}
+ .jieguo .cart {
+    height:50px;
+    margin:20px;
+    margin-top:30px;
+}
+.jieguo .cart button{
+    display:inline-block;
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    margin-right:20px;
+    font-size:14px;
+    zoom:1;
+    border-radius:3px;
+}
+.jieguo .cart .like{
+    background-color:#ffedee;
+    border:1px solid #ff2832;
+    width:80px;
+}
+ .jieguo .cart .like:hover{
+    background-color:#ffd7d7;
+    border-color:#f00000;
+    color:#f00000;
+}
+ .jieguo .cart .car{
+    background-color:#ff2832;
+    border:1px solid #ff2832;
+    color:#fff;
+    width:100px;
+}
+ .jieguo .cart .car:hover{
+    background-color:#f00000;
+}
+
+
+
+
+
+
+

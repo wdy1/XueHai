@@ -1,0 +1,93 @@
+﻿*{margin:0px;padding:0px;}
+.Contain{width:100%;margin:0 auto;padding:0;}
+.Top{width:100%;margin:0 auto;height:440px;position:relative;background:url(../Images/背景/dehome.jpg);background-size:cover;}
+.PetIntroduce{position:absolute;left:0px;top:0px;width:100%;height:100%;}
+.PetCategoryImg{position:absolute;width:200px;height:200px;left:50%;top:50px;margin-left:-100px;}
+.PetCategoryImg img{border-radius:50%;overflow:hidden;}
+.Pet-name{position:absolute;top:270px;width:600px;left:50%;margin-left:-300px;text-align:center;}
+.Pet-name span{font-family:KaiTi;font-size:25px;color:white;font-weight:700;}
+.Pet-name .itr{font-family:KaiTi;font-size:20px;color:#808080;font-weight:600;}
+.lab.BM{position:absolute;right:-40px;bottom:50px;background-color:#dab02e;height:22px;border-radius:11px;width:100px;}
+.lab.ENM{position:absolute;right:-25px;bottom:20px;background-color:#2a9ebd;height:22px;border-radius:11px;width:100px;}
+.lab .IC{display: block;
+    height: 18px;
+    width: 18px;
+    float: left;
+    background: #fff;
+    border-radius: 9px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 14px;
+}
+.fa{display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;}
+.lab .IC i{font-size: 12px;
+    line-height: 18px}
+.BM i{color:#dab02e;}
+.ENM i{color:#2a9ebd;}
+.span1{font-family:KaiTi;font-size:11px;color:white;}
+.span2{font-family:KaiTi;font-size:11px;color:#b200ff;}
+.PetAddLove{position:absolute;width:200px;bottom:20px;left:50%;margin-left:-100px;text-align:center;}
+.PetAddLove a{display: inline-block;
+    margin: 0 10px;
+    padding: 7px 40px 7px 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    font-family:KaiTi;
+    text-decoration:none;
+}
+.PetAddLove a:hover{border:3px solid white}
+.PetAddLove a i{margin-right: 5px}
+.PetAddLove a.gz{background: #00c9d0;}
+/*中部*/
+.Middle{width:1200px;margin:0 auto;height:320px;}
+.MiddleMenu{width:50%;float:left;text-align:center;height:50px;}
+.MiddleMenu span{height:50px;line-height:50px;font-family:KaiTi;font-size:20px;font-weight:600;}
+.MiddleMenu span i{width:30px;margin-right:5px;}
+.fa2{display: inline-block;
+    font: normal normal normal 20px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;}
+.BaseInfo{width:50%;float:left;border-right:1px solid #9a9696;height:210px;margin-top:20px;}
+.Features{width:50%;float:left;height:210px;margin-top:20px;}
+.BaseInfo .rows{width:210px;margin-left:70px;margin-right:10px;float:left;}
+.BaseInfo .rows .flag{position:absolute;margin-left:-70px;color:black;font-family:KaiTi;font-size:19px;margin-right:10px;}
+.BaseInfo .rows .part{font-family:KaiTi;font-size:19px;color:#808080;min-height:30px;}
+.Features .rows{width:45%;float:left;line-height:30px;margin-left:5%;}
+.Features .rows .flag{display: inline-block; width: 120px;font-family:KaiTi;font-size:19px;}
+.Features .rows .part i{width:80px;height:12px;display: inline-block;;background:url(../Images/小图标/icon-pets-star.png);}
+.Features .rows .part .XX-1{background-position:0 0px;}
+.Features .rows .part .XX-2{background-position:0 -12px;}
+.Features .rows .part .XX-3{background-position:0 -24px;}
+.Features .rows .part .XX-4{background-position:0 -36px;}
+.Features .rows .part .XX-5{background-position:0 -48px;}
+.Features .rows .part .XX-6{background-position:0 -60px;}
+.Features .rows .part .XX-7{background-position:0 -72px;}
+.Features .rows .part .XX-8{background-position:0 -84px;}
+.Features .rows .part .XX-9{background-position:0 -96px;}
+.Features .rows .part .XX-10{background-position:0 -108px;}
+.PetInfo{width:1200px;margin:0 auto;}
+.PetInfo .JS{width:200px;margin:0 auto;height:40px;text-align:center;border-bottom:solid 2px #00c9d0;}
+.PetInfo .JS span{font-family:KaiTi;font-size:20px;font-weight:600;}
+.PetInfo .JS span i{margin-right:10px;}
+.PetInfoBottom{width:1200px;margin:0 auto;margin-top:20px;}
+.PetInfoBottom .Left{width:820px;float:left;border:solid 1px #ddd;margin-top:20px;}
+.PetInfoBottom .Left .InfoMenu{width:100%;height:50px;margin-bottom:0px;}
+.PetInfoBottom .Left .InfoMenu li{width:25%;height:100%;border-right:solid 0.5px #2a9ebd;float:left;list-style:none;text-align:center;}
+.PetInfoBottom .Left .InfoMenu li a{width:100%;height:50px;line-height:50px;text-align:center;text-decoration:none;font-family:KaiTi;font-size:18px;font-weight:600;color:#808080;cursor:pointer;}
+.PetInfoBottom .Left .InfoMenu li a:hover{color:#2a9ebd;}
+.PetInfoBottom .Left .InfoMenu li a.active{color:#2a9ebd;}
+.PetInfoBottom .Left .InfoMenu li a i{margin-right:10px;}
+.PetInfoBottom .Left .pet-info{display:none;width:100%;}
+.PetInfoBottom .Left .show{display:block;}
+
+
+
+
+

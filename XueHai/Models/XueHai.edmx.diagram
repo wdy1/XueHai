@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05f4c81f91ef4e5298e320b09b9d2c60" Name="Diagram1">
+        <EntityTypeShape EntityType="XueHaiModel.Comments" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.FavoriteGoods" Width="1.5" PointX="6" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.FavoriteVideo" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.Goods" Width="1.5" PointX="0.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.GoodsK" Width="1.5" PointX="1.5" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.LunTan" Width="1.5" PointX="3.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.Manager" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.OrderDetails" Width="1.5" PointX="5.25" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.Orders" Width="1.5" PointX="3" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.Post" Width="1.5" PointX="6" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.Reply" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.ShopCar" Width="1.5" PointX="3" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.UserAddress" Width="1.5" PointX="3" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.UserGuanzhu" Width="1.5" PointX="3" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.UserInfo" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.Video" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.VideoK" Width="1.5" PointX="1.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.View_OrderDetails" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.View_ShopCar" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XueHaiModel.View_UserInfo" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="XueHaiModel.FK__Comments__Goods___38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Comments__Post_i__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Comments__Users___37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Comments__Video___3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Reply__ComID__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__FavoriteG__Goods__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__FavoriteG__Users__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__FavoriteV__Users__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__FavoriteV__Video__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Goods__GoodsK_id__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__OrderDeta__Goods__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__ShopCar__Goods_i__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Post__LunTan_id__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__OrderDeta__Order__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Orders__Users_id__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Post__Users_id__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Reply__Users_id__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__ShopCar__Users_i__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__UserAddre__Users__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__UserGuanz__Users__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__UserGuanz__Users__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="XueHaiModel.FK__Video__VideoK_id__1B0907CE" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="XueHaiModel.Praised" Width="1.5" PointX="10.5" PointY="14.625" />
+        <AssociationConnector Association="XueHaiModel.FK__Praised__ComID__70DDC3D8" />
+        <AssociationConnector Association="XueHaiModel.FK__Praised__Reply_i__71D1E811" />
+        <AssociationConnector Association="XueHaiModel.FK__Praised__Users_i__6FE99F9F" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

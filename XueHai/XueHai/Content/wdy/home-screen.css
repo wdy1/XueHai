@@ -1,0 +1,255 @@
+﻿.screen-nav{
+    width:100%;
+}
+.screen-nav .nav-mi{
+    width:1190px;
+    margin:0 auto;
+    height:35px;
+}
+.screen-nav .nav-mi .mi-left{
+    width:200px;
+    line-height:34px;
+    font-size:18px;
+    text-align:center;
+    background-color:#487a6f;
+    border-radius:4px 4px 0 0;
+    color:#fff;
+    float:left;
+}
+.screen-nav .nav-mi .mi-left::after{
+    content:".";
+    display:block;
+    clear:both;
+    height:0;
+    visibility:hidden;
+}
+.screen-nav .nav-mi .mi-right{
+    line-height:35px;
+    margin-left:220px;
+}
+.screen-nav .nav-mi .mi-right .mi-content{
+
+}
+.screen-nav .nav-mi .mi-right .mi-content a{
+    color:#323232;
+    font-size:15px;
+    font-weight:700;
+    padding:0 25px;
+    margin:0 25px;
+}
+.screen-nav .nav-mi .mi-right .mi-content a:hover{
+    color:#f40;
+}
+
+.screen-content{
+    width:100%;
+    background-color:#fff;
+}
+.screen-content .content{
+    width:1190px;
+    margin: 0 auto;
+    display:flex;
+}
+.screen-content .content .content-left{
+    width:198px;
+    border-top:2px dotted #487a6f;
+    border-bottom:1px solid #487a6f;
+    border-right:1px solid #487a6f;
+    border-left:1px solid #487a6f;
+}
+.screen-content .content .content-left .font{
+    width:170px;
+    border-bottom:1px dotted #849555;
+    margin-left:9px;
+    position:relative;
+    overflow:hidden;
+    padding-top:5px;
+    padding-bottom:2px;
+}
+.screen-content .content .content-left .for{
+    padding-bottom:3px;
+}
+.content .content-left .for span{
+    color:#487a6f;
+    font-size:14px;
+    line-height:24px;
+    height:24px;
+    font-weight:bold;
+    background:url(../../Images/小图标/yjt.png) 160px 8px no-repeat;
+    display:block;
+}
+.content .content-left a.no-last{
+    background:url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/sidemenu_bg1.png) right center no-repeat;
+}
+ .wrapper .content .content-left a{
+    color:#666;
+    font-size:12px;
+    margin-right:5px;
+    padding-right:5px;
+    height:24px;
+    line-height:24px;
+    white-space:nowrap;
+}
+.content .content-left a:hover{
+    color:#ec7814;
+}
+.wrapper .screen-content .content .content-left .finish{
+    width:170px;
+    margin-left:9px;
+    position:relative;
+    overflow:hidden;
+    padding-top:5px;
+    padding-bottom:2px;
+}
+.wrapper .screen-content .content .content-middle{
+    height:605px;
+    width: 760px;
+}
+.wrapper .screen-content .content .content-middle #slide-holder{
+    height:340px;
+    width:750px;
+    margin:5px 5px;
+    position:relative;
+    margin-bottom:10px;
+}
+.wrapper .screen-content .content .content-middle .book-online{
+    margin:0 5px;
+    width:750px;
+    height:43px;
+    line-height:0;
+    font-size:0;
+    background:url(http://book.dangdang.com/Standard/Book/Extend/hosts/images/home/new_book.png) no-repeat;
+    text-indent:-9999px;
+}
+.screen-content .content .content-middle .middle-bot{
+    width:990px;
+    height:205px;
+}
+.content-middle .middle-bot .entry{
+    margin-left:10px;
+    margin-right:5px;
+    width:980px;
+    height:200px;
+    margin-top:5px;
+    overflow:hidden;
+}
+.content-middle .middle-bot .entry .entry-content{
+    width:120px;
+    height:200px;
+    margin-right:3px;
+    float:left;
+    padding-left:5px;
+    padding-right:10px;
+    
+}
+.content-middle .middle-bot .entry .entry-content img{
+    height:140px;
+    width:120px;
+}
+.content-middle .middle-bot .entry .entry-content div{
+    width:110px;
+    height:25px;
+    overflow:hidden;
+}
+.content-middle .middle-bot .entry .entry-content a div{
+    color:#000;
+    font-size:12px;
+    line-height:25px;  
+}
+.content-middle .middle-bot .entry .entry-content a:hover div{
+    color:#ec7814;
+}
+/*.content-middle .middle-bot .entry .entry-content h4 a:hover{
+    color:#ec7814;
+}*/
+.content-middle .middle-bot .entry .entry-content p{
+    width:110px;
+    height:25px;
+    line-height:25px;
+    font-size:12px;
+    color:#c30;
+    font-weight:700;
+}
+.content-middle .middle-bot .entry .entry-content  p span{
+    text-decoration:line-through;
+    color:#aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper .screen-content .content .content-right{
+    height:380px;
+    width: 230px;
+}
+.content .content-right .con1{
+    width:100%;
+    height:140px;
+    margin-top:5px;
+}
+.content .content-right .con2{
+    width:100%;
+    height:220px;
+}
+.content .content-right .con1 .new-state{
+    margin:6px 10px;
+    width:208px;
+    height:126px;
+    border:1px solid #eaeaea;
+    margin-bottom:10px;
+}
+.content .content-right .con2 .new-state1{
+    margin:1px 10px;
+    width:208px;
+    height:216px;
+    border:1px solid #eaeaea;
+}
+.content-right .new-book{
+    color:#000;
+    font-weight:bold;
+    font-size:16px;
+    height:28px;
+    font-family:'Microsoft YaHei';
+}
+.content-right .new-book h2{
+    font-size:100%;
+    margin-left:4px;
+    position:relative;
+}
+.content-right .new-book h2 a{
+    position:absolute;
+    font-size:12px;
+    line-height:28px;
+    color:#666;
+    right:10px;
+}
+.content .content-right .con1 .new-state ul{
+    position:relative;
+    overflow:hidden;
+}
+.content-right .con1 .new-state ul li{
+    
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+.con1 .new-state ul li a{
+    font-size:12px;
+    color:#666;
+ }
+.con1 .new-state ul li a:hover{
+    color:#f40;
+}
+
+

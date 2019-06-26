@@ -1,0 +1,507 @@
+﻿/*宠物明星样式*/
+.BigPetStar{width:1300px;margin:0 auto;height:50px;margin-bottom:30px;margin-top:40px;}
+.PetStarLeft{width:35%;float:left;height:20px;border-bottom:solid 1px rgba(0,0,0,.4);}
+.PetStarMiddle{width:30%;height:50px;float:left;text-align:center;}
+.PetStarMenu{width:320px;margin:0 auto;height:40px;margin-bottom:5px;text-align:center;}
+.PetEncyclopedias{width:100%;margin:0 auto;height:40px;border-bottom:solid 1px #e5dfdf;margin-bottom:10px;}
+.StarLogo{margin: 0px 15px 0 14px;background: url("/Images/小图标/icon.png") no-repeat;background-position: 0 -33px;height:40px;width:40px;}
+.Star{height:40px;}
+.ENG1{font-family:华文隶书;font-size:30px;font-weight:700;color:#F65;}
+.starname{font: 27px/27px "Microsoft YaHei";color: #f65;padding: 30px 0 0;}
+.PetStar{width:1200px;margin:0 auto;height:600px;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;-o-transform-style:preserve-3d;}
+/*.StarItem{width:280px;margin:0 10px 0 10px;height:280px;float:left;position:relative;}*/
+.StarItemImg{position:absolute;left:0px;top:0px;width:100%;height:100%;}
+.StarItemImg img{width:100%;height:100%;border-radius:50%;overflow:hidden;cursor:pointer;}
+.StarItemImg img{filter: grayscale(0);-webkit-filter: grayscale(0);-moz-filter: grayscale(0);-ms-filter: grayscale(0);-o-filter: grayscale(0);}
+.StarItem:hover .StarItemImg img{filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);}
+/*.StarItemInfo{position:absolute;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,.5);display:none;cursor:pointer;}*/
+.StarItem:hover .StarItemInfo{display:block;}
+.StarItem:hover .StarItemImg img{border-radius:0;}
+.StarItemName{top:50px;left:50px;position:absolute;}
+.StarItemName span{font-family:华文隶书;color:white;font-size:20px;width:80px;text-align:right;}
+.StarItemName a{font-family:KaiTi;font-size:17px;color:yellow;}
+.StarItemName a:hover{color:red;text-decoration:underline;}
+.StarIteminfo1{position:absolute;left:50px;top:80px;}
+.StarIteminfo2{position:absolute;left:50px;top:110px;width:200px;}
+.EN{font-family:华文隶书;color:white;font-size:20px;}
+.KT{font-family:KaiTi;color:yellow;font-size:17px;}
+/*宠物百科样式*/
+.EncyclopediasLogo{margin: 0px 15px 0 14px;background: url("/Images/小图标/icon.png") no-repeat;background-position: -120px -33px;height:40px;width:40px;float:left;}
+.PetEncyclopedias{width:100%;margin:0 auto;height:40px;border-bottom:solid 1px #e5dfdf;margin-bottom:10px;margin-top:20px;}
+.PetEncyclopedias2{width:1200px;margin:0 auto;height:500px;}
+.PetEncyclopedias2 .tp-news{width:530px; float:left;}
+.PetEncyclopedias2 .tp-news .lunbo{width:530px; height:310px; margin-bottom:20px; overflow:hidden;}
+.PetEncyclopedias2 .tp-news .lunbo img{width:530px; height:310px;}
+.PetEncyclopedias2 .tp-news .s-tp-n{height:160px; overflow:hidden; zoom:1;}
+.PetEncyclopedias2 .tp-news .s-tp-n a{width:250px; height:160px; position:relative;margin-right:10px;}
+.PetEncyclopedias2 .tp-news .s-tp-n a img{width:260px; height:160px;filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-ms-filter: grayscale(100%);-o-filter: grayscale(100%);}
+.PetEncyclopedias2 .tp-news .s-tp-n a:hover img{filter: grayscale(0);-webkit-filter: grayscale(0);-moz-filter: grayscale(0);-ms-filter: grayscale(0);-o-filter: grayscale(0);}
+.PetEncyclopedias2 .tp-news .s-tp-n a span{display:block; height:30px; padding:0 10px; line-height:30px; position:absolute; left:0; right:0; bottom:0; background:rgba(0,0,0,.4); color:#fff; font-size:14px; overflow:hidden; word-break:break-all;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;}
+.PetEMiddle{width:300px;height:490px;float:left;margin-left:10px;margin-right:10px;}
+.PetEMiddleItem{width:100%;height:155px;float:left;position:relative;overflow:hidden;cursor:pointer;-webkit-box-shadow: 0 7px 10px 0 rgba(0,0,0,0.7);-moz-box-shadow: 0 7px 10px 0 rgba(0,0,0,0.7);box-shadow: 0 7px 10px 0 rgba(0,0,0,0.7);margin-bottom:13px;}
+.PetEMiddleItem:hover{-webkit-box-shadow: 0 7px 10px 0 #ea4949;-moz-box-shadow: 0 7px 10px 0 #ea4949;box-shadow: 0 7px 10px 0 #ea4949;}
+.PetEMiddleItem .ItemImg{width:100%;height:100%;position:absolute;left:0px;top:0px;}
+.PetEMiddleItem .ItemImg img{width:100%;height:100%;}
+.PetEMiddleItem .ItemIntroduce{position:absolute;width:100%;left:0;top:120px;transition:top 0.5s ease;background:rgba(0,0,0,.5)}
+.PetEMiddleItem:hover .ItemIntroduce{top:80px;}
+.PetERight{float:left;height:490px;width:345px;border:solid 1px #ddd;}
+.HotEncy{height:60px;width:320px;margin:0 auto;border-bottom:solid 1px #ddd;}
+.HotEncyname{float:left;height:60px;border-bottom:solid 3px #f65;}
+.HotEncy .HotEncyname span{font: 24px/24px "Microsoft YaHei";color: #f65;padding: 30px 0 0;height:60px;line-height:60px;}
+.HotEncy .more{height:60px;}
+.HotEncy .more a{font: 12px/1.5 Microsoft yahei,arial;color:rgba(0,0,0,.5);height:60px;line-height:60px;}
+.HotEncy .more a:hover{color:red;text-decoration:underline;}
+
+/*百科图片轮播*/
+#news-focus{width:530px;height:310px;overflow:hidden;position:relative;}
+#news-focus ul{height:310px;position:absolute;}
+#news-focus ul li{float:left;width:530px;height:310px;overflow:hidden;position:relative;background:#000;}
+#news-focus ul li img{width:530px; height:310px;}
+#news-focus .btnBg{position:absolute;width:530px; height:50px; left:0;bottom:0;background:#000;}
+#news-focus .btn{position:absolute;width:520px;height:50px; padding:0 5px; right:0;bottom:0;text-align:right;}
+#news-focus .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-right:5px;cursor:pointer;background:#fff; margin-top:20px;}
+#news-focus .btn span.on{background:#fff;}
+#news-focus .preNext{width:45px;height:100px;position:absolute;top:90px;background:url('../Images/小图标/sprite.png') no-repeat 0 0;cursor:pointer}
+#news-focus .pre{left:0;}
+#news-focus .next{right:0;background-position:right top;}
+#news-focus ul li .slideother{position:absolute;left:10px;top:260px;width:530px;height:50px;display:inline-block; z-index:10;}
+#news-focus ul li .slideother .h12{position:absolute;top:0px;left:0;}
+#news-focus ul li .slideother .h12 a{color:#FFF;font-size:16px; line-height:50px;}
+#news-focus ul li .slideother .h12 a:hover{ color:#ee7800;}
+/*护养常识*/
+.PetNursing{width:1200px;margin:0 auto;height:600px;}
+.BigNursingItem{width:50%;float:left;height:270px;}
+.NursingItem{width:580px;height:250px;border:solid 1px rgba(0,0,0,.5);margin-top:1px;margin-left:1px;background-color:#fff;transition:all 0.6s ease;cursor:pointer;}
+.NursingItem:hover{margin-top:0px;margin-left:0px;-webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.7);-moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.7);box-shadow: 0 10px 15px 0 rgba(0,0,0,0.7);}
+.NursingItemImg{height:100%;width:250px;float:left;list-style:none;}
+.NursingItemImg li a{width:100%;height:100%;display:none;}
+.NursingItemImg li.active a{display:block;}
+.NursingItemImg li a img{width:100%;height:250px;}
+.NursingItemImg li a:hover img{filter: grayscale(80%);-webkit-filter: grayscale(80%);-moz-filter: grayscale(80%);-ms-filter: grayscale(80%);-o-filter: grayscale(80%);}
+.NursingItem .DiseaseShow{width:330px;float:right;height:100%;}
+.NursingItem .DiseaseShow .DivTitle {
+    height: 49px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid 1px #ddd;
+}
+.NursingItem .DiseaseShow .DivTitle{
+    font: 12px/1.5 Microsoft yahei,arial;
+    color: rgba(0,0,0,.5);
+    height: 49px;
+    line-height: 49px;
+}
+.NursingItem .DiseaseShow .DivTitle more a {
+     font: 12px/1.5 Microsoft yahei,arial;
+    color: rgba(0,0,0,.5);
+    height: 49px;
+    line-height: 49px;padding-right:15px;
+    } 
+.NursingItem .DiseaseShow .DivTitle .DivName {
+    float: left;
+    height: 49px;padding:0 15px;
+    border-bottom: solid 3px #f65;
+}
+.NursingItem .DiseaseShow .DivTitle .DivName span {
+    font: 24px/24px "Microsoft YaHei";
+    color: #f65;
+    padding: 30px 0 0;
+    height: 49px;
+    line-height: 49px;
+}
+.NursingItem .DiseaseShow .ulDisease{width:100%;list-style:none;}
+.NursingItem .DiseaseShow .ulDisease li{width:320px;padding-left:10px;height:39px;line-height:39px;border-bottom:dotted 1px #ddd;clear:both;box-sizing:padding-box;}
+.NursingItem .DiseaseShow .ulDisease li a.Title{float:left;height:39px;line-height:39px;font-family:华文楷体;font-size:15px;}
+.NursingItem .DiseaseShow .ulDisease li a.Title:hover{color:red;}
+.NursingItem .DiseaseShow .ulDisease li p.Time{float:right;height:39px;line-height:39px;padding-right:10px;font-family:华文楷体;color:rgba(0,0,0,.5);}
+
+.NursingItem .DiseaseShow .ulYangHu{width:100%;list-style:none;}
+.NursingItem .DiseaseShow .ulYangHu li{width:320px;padding-left:10px;height:39px;line-height:39px;border-bottom:dotted 1px #ddd;clear:both;box-sizing:padding-box;}
+.NursingItem .DiseaseShow .ulYangHu li a.Title{float:left;height:39px;line-height:39px;font-family:华文楷体;font-size:15px;}
+.NursingItem .DiseaseShow .ulYangHu li a.Title:hover{color:red;}
+.NursingItem .DiseaseShow .ulYangHu li p.Time{float:right;height:39px;line-height:39px;padding-right:10px;font-family:华文楷体;color:rgba(0,0,0,.5);}
+
+.NursingItem .DiseaseShow .ulXuanGou{width:100%;list-style:none;}
+.NursingItem .DiseaseShow .ulXuanGou li{width:320px;padding-left:10px;height:39px;line-height:39px;border-bottom:dotted 1px #ddd;clear:both;box-sizing:padding-box;}
+.NursingItem .DiseaseShow .ulXuanGou li a.Title{float:left;height:39px;line-height:39px;font-family:华文楷体;font-size:15px;}
+.NursingItem .DiseaseShow .ulXuanGou li a.Title:hover{color:red;}
+.NursingItem .DiseaseShow .ulXuanGou li p.Time{float:right;height:39px;line-height:39px;padding-right:10px;font-family:华文楷体;color:rgba(0,0,0,.5);}
+
+.NursingItem .DiseaseShow .ulChanPin{width:100%;list-style:none;}
+.NursingItem .DiseaseShow .ulChanPin li{width:320px;padding-left:10px;height:39px;line-height:39px;border-bottom:dotted 1px #ddd;clear:both;box-sizing:padding-box;}
+.NursingItem .DiseaseShow .ulChanPin li a.Title{float:left;height:39px;line-height:39px;font-family:华文楷体;font-size:15px;}
+.NursingItem .DiseaseShow .ulChanPin li a.Title:hover{color:red;}
+.NursingItem .DiseaseShow .ulChanPin li p.Time{float:right;height:39px;line-height:39px;padding-right:10px;font-family:华文楷体;color:rgba(0,0,0,.5);}
+/*宠物互动*/
+.BigPetINter{width:1200px;margin:0 auto;height:650px;}
+.BigPetINterItem{height:300px;width:550px;
+                 border:solid 1px #ddd;
+                 margin-bottom:20px;}
+.PetSeek{height:60px;width:520px;margin:0 auto;border-bottom:solid 1px #ddd;}
+.PetSeekname{float:left;height:60px;border-bottom:solid 3px #f65;}
+.PetSeek .PetSeekname span{font: 24px/24px "Microsoft YaHei";color: #f65;padding: 30px 0 0;height:60px;line-height:60px;}
+.PetSeek .more{height:60px;}
+.PetSeek .more a{font: 12px/1.5 Microsoft yahei,arial;color:rgba(0,0,0,.5);height:60px;line-height:60px;}
+.PetSeek .more a:hover{color:red;text-decoration:underline;}
+.BigPetSeek{width:510px;height:200px;margin:20px;}
+.PetSeekImg{float:left;width:200px;height:100%;position:relative;}
+.PetSeekImg a{position:absolute;top:0px;left:0px;}
+.message{font-family:KaiTi;color:white;text-align:center;height:30px;line-height:30px;}
+.PetSeekImg .message{position:absolute;left:0px;bottom:0px;height:30px;width:100%;background-color:rgba(0,0,0,0.7);}
+.PetSeekImg a,.PetSeekImg a img{width:100%;height:100%;}
+
+/*宠物种类*/
+.pet{cursor:pointer;}
+.PetSpecies{width:1200px;margin:0 auto;
+            /*border:solid 1px #ddd;*/
+            height:800px;}
+.PetSpeciesTop{height:60px;width:1140px;margin:0 auto;border-bottom:solid 1px #ddd;}
+.PetSpeciesname{height:57px;border-bottom:solid 3px #f65;}
+.PetSpeciesname span{font: 24px/24px "Microsoft YaHei";color: #f65;padding: 30px 0 0;height:60px;line-height:60px;}
+.PetSpeciesTop .Category{height:60px;}
+/*.PetSpeciesTop .more a{font: 12px/1.5 Microsoft yahei,arial;color:rgba(0,0,0,.5);height:60px;line-height:60px;}*/
+/*.PetSpeciesTop .more a:hover{color:red;text-decoration:underline;}*/
+.PetSpeciesTop .PetCategory .pet{width: 88px;
+    position: relative;
+    float: left;
+    text-indent: 40px;
+    margin-top:15px;
+    height:30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family:KaiTi;
+    color: #c6c5c5;
+    border-right:solid 1px #ddd;
+    transition: all 0.2s;}
+.PetSpeciesTop .PetCategory .more{
+    float: left;
+    height:60px;
+    text-indent: 20px;
+    line-height:60px;
+    margin-top:22px;
+    font: 12px/1.5 Microsoft yahei,arial;color:rgba(0,0,0,.5);}
+.PetSpeciesTop .PetCategory .more:hover{color:red;text-decoration:underline;}
+.PetCategory .dog:hover{color:#ff9041;}
+.PetCategory .cat:hover{color:#ff6e4e;}
+.PetCategory .rabbit:hover{color:#56c8fa;}
+.PetCategory .qita:hover{color:#83d684;}
+.PetSpeciesTop .PetCategory .pet:before{width: 31px;
+    height: 27px;
+    position: absolute;
+    top:2px;
+    left: 10px;
+    content: "";
+    background: url(../Images/小图标/icon-pets-filter-new.png) no-repeat;
+    transition: all 0.2s;
+}
+.PetSpeciesTop .PetCategory .cat:before{background-position:-31px 0;}
+.PetSpeciesTop .PetCategory .rabbit:before{background-position:-62px 0;}
+.PetSpeciesTop .PetCategory .qita:before{background-position:-124px 0;}
+.PetSpeciesTop .PetCategory .dog.current:before{background-position:0px -27px;}
+.PetSpeciesTop .PetCategory .cat.current:before{background-position:-31px -27px;}
+.PetSpeciesTop .PetCategory .rabbit.current:before{background-position:-62px -27px;}
+.PetSpeciesTop .PetCategory .qita.current:before{background-position:-124px -27px;}
+.BigPetSpeciesItem{margin:0 auto;margin-top:10px;}
+.dogSpeciesItem{width:1140px;height:730px;margin:0 auto;}
+.dogSpeciesItem .dogItem{height:260px;width:360px;float:left;margin:10px 10px 100px 10px;background-color:white;list-style:none;list-style-type:none; }
+.BigdogItem{width:100%;height:100%;z-index:10;cursor:pointer;position:relative;}
+.BigdogItem .dogItemImg{width:100%;height:100%;}
+.BigdogItem .dogItemImg img{width:100%;height:100%;transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+    filter: grayscale(60%);-webkit-filter: grayscale(60%);-moz-filter: grayscale(60%);-ms-filter: grayscale(60%);-o-filter: grayscale(60%);
+}
+.BigdogItem:hover .dogItemImg img{position: relative; z-index: 9; border: 6px solid rgba(255, 255, 255, 0.9);
+	transform: scale(0.5) translateY(100%); 
+	-webkit-transform: scale(0.5) translateY(100%); 
+	-moz-transform: scale(0.5) translateY(100%);
+    filter: grayscale(0);-webkit-filter: grayscale(0);-moz-filter: grayscale(0);-ms-filter: grayscale(0);-o-filter: grayscale(0);
+}
+.BigdogItem .dogItemText.Two{opacity: 0;
+	transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.BigdogItem .dogItemText.One{opacity: 0;
+	transform: translateX(-40%);
+	-webkit-transform: translateX(-40%);
+	-moz-transform: translateX(-40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.BigdogItem .dogItemText.Three{opacity: 0;
+	transform: translateX(40%);
+	-webkit-transform: translateX(40%);
+	-moz-transform: translateX(40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.dogItemText{position: absolute; left:0;top:0;background:url(../Images/背景/black.jpg); height: 100%; opacity: 0; width: 100%;}
+.BigdogItem:hover .dogItemText.Two{
+    opacity: 1;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+.BigdogItem:hover .dogItemText.One{
+    opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+.BigdogItem:hover .dogItemText.Three{
+    opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+.dogItemText2 h3{font-family:KaiTi;font-size:24px;color:white;margin:15px 0 20px;}
+.dogItemText2 p{width:70%;margin:0 auto;font-family:KaiTi;color:#ddd;}
+.dogItemText2 a{background-color:aqua;color:white;}
+/*猫类*/
+.catSpeciesItem{width:1140px;height:730px;margin:0 auto;}
+.petul{width:1140px;height:730px;margin:0 auto;}
+.catSpeciesItem .catItem{height:260px;width:360px;float:left;margin:10px 10px 100px 10px;background-color:white;list-style:none;list-style-type:none; }
+.BigcatItem{width:100%;height:100%;z-index:10;cursor:pointer;position:relative;}
+.BigcatItem .catItemImg{width:100%;height:100%;}
+.BigcatItem .catItemImg img{width:100%;height:100%;transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+    filter: grayscale(60%);-webkit-filter: grayscale(60%);-moz-filter: grayscale(60%);-ms-filter: grayscale(60%);-o-filter: grayscale(60%);
+}
+.BigcatItem:hover .catItemImg img{position: relative; z-index: 9; border: 6px solid rgba(255, 255, 255, 0.9);
+	transform: scale(0.5) translateY(100%); 
+	-webkit-transform: scale(0.5) translateY(100%); 
+	-moz-transform: scale(0.5) translateY(100%);
+    filter: grayscale(0);-webkit-filter: grayscale(0);-moz-filter: grayscale(0);-ms-filter: grayscale(0);-o-filter: grayscale(0);
+}
+.BigcatItem .catItemText.Two{opacity: 0;
+	transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.BigcatItem .catItemText.One{opacity: 0;
+	transform: translateX(-40%);
+	-webkit-transform: translateX(-40%);
+	-moz-transform: translateX(-40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.BigcatItem .catItemText.Three{opacity: 0;
+	transform: translateX(40%);
+	-webkit-transform: translateX(40%);
+	-moz-transform: translateX(40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.catItemText{position: absolute; left:0;top:0;background:url(../Images/背景/black.jpg); height: 100%; opacity: 0; width: 100%;}
+.BigcatItem:hover .catItemText.Two{
+    opacity: 1;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+.BigcatItem:hover .catItemText.One{
+    opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+.BigcatItem:hover .catItemText.Three{
+    opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+.catItemText2 h3{font-family:KaiTi;font-size:24px;color:white;margin:15px 0 20px;}
+.catItemText2 p{width:70%;margin:0 auto;font-family:KaiTi;color:#ddd;}
+.catItemText2 a{background-color:aqua;color:white;}
+/*兔类*/
+.rabbitSpeciesItem{width:1140px;height:730px;margin:0 auto;}
+.petul{width:1140px;height:730px;margin:0 auto;}
+.rabbitSpeciesItem .rabbitItem{height:260px;width:360px;float:left;margin:10px 10px 100px 10px;background-color:white;list-style:none;list-style-type:none; }
+.BigrabbitItem{width:100%;height:100%;z-index:10;cursor:pointer;position:relative;}
+.BigrabbitItem .rabbitItemImg{width:100%;height:100%;}
+.BigrabbitItem .rabbitItemImg img{width:100%;height:100%;transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+    filter: grayscale(60%);-webkit-filter: grayscale(60%);-moz-filter: grayscale(60%);-ms-filter: grayscale(60%);-o-filter: grayscale(60%);
+}
+.BigrabbitItem:hover .rabbitItemImg img{position: relative; z-index: 9; border: 6px solid rgba(255, 255, 255, 0.9);
+	transform: scale(0.5) translateY(100%); 
+	-webkit-transform: scale(0.5) translateY(100%); 
+	-moz-transform: scale(0.5) translateY(100%);
+    filter: grayscale(0);-webkit-filter: grayscale(0);-moz-filter: grayscale(0);-ms-filter: grayscale(0);-o-filter: grayscale(0);
+}
+.BigrabbitItem .rabbitItemText.Two{opacity: 0;
+	transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.BigrabbitItem .rabbitItemText.One{opacity: 0;
+	transform: translateX(-40%);
+	-webkit-transform: translateX(-40%);
+	-moz-transform: translateX(-40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.BigrabbitItem .rabbitItemText.Three{opacity: 0;
+	transform: translateX(40%);
+	-webkit-transform: translateX(40%);
+	-moz-transform: translateX(40%);
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+    text-align:center;
+}
+.rabbitItemText{position: absolute; left:0;top:0;background:url(../Images/背景/black.jpg); height: 100%; opacity: 0; width: 100%;}
+.BigrabbitItem:hover .rabbitItemText.Two{
+    opacity: 1;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+.BigrabbitItem:hover .rabbitItemText.One{
+    opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+.BigrabbitItem:hover .rabbitItemText.Three{
+    opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+.rabbitItemText2 h3{font-family:KaiTi;font-size:24px;color:white;margin:15px 0 20px;}
+.rabbitItemText2 p{width:70%;margin:0 auto;font-family:KaiTi;color:#ddd;}
+.rabbitItemText2 a{background-color:aqua;color:white;}
+
+.beijin{background-repeat: no-repeat;
+            background-position: center;
+            width:100%;
+            height:100%;
+            -webkit-filter: blur(8px);
+            -moz-filter: blur(8px);
+            -o-filter: blur(8px);
+            -ms-filter: blur(8px);
+            filter: blur(8px);}
+.catItemText2{position:absolute;left:0px;top:0px;}
+.dogItemText2{position:absolute;left:0px;top:0px;}
+
+
+
+.ulHotEncy{
+    width:328px;
+    margin-left:20px;
+    list-style: none;
+    height: 300px;
+    background: url(../Images/背景/list-decimal.png) 0 10px no-repeat;
+    margin-top: 10px;
+}
+.ulHotEncy li {
+    width: 100%;
+    height: 30px;
+    padding-left: 25px;
+}
+.ulHotEncy li a {
+    line-height: 30px;
+    font-family: Microsoft yahei,arial;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.ulHotEncy li a:hover{color:#F65;}
+
+
+
+.ulPickPet{width:300px;margin-left:10px;list-style:none;float:left;}
+.ulPickPet li{height:39px;line-height:39px;border-bottom:dotted 1px #ddd;}
+.ulPickPet li a.Title{float: left;
+    height: 39px;
+    line-height: 39px;
+    font-family: 华文楷体;
+    font-size: 15px;}
+.ulPickPet li a.Title:hover{color:#F65;}
+.ulPickPet li p.Time{float: right;
+    height: 39px;
+    line-height: 39px;
+    padding-right: 10px;
+    font-family: 华文楷体;
+    color: rgba(0,0,0,.5);}
+
+.ulYlPet{width:300px;margin-left:10px;list-style:none;float:left;}
+.ulYlPet li{height:39px;line-height:39px;border-bottom:dotted 1px #ddd;}
+.ulYlPet li a.Title{float: left;
+    height: 39px;
+    line-height: 39px;
+    font-family: 华文楷体;
+    font-size: 15px;}
+.ulYlPet li a.Title:hover{color:#F65;}
+.ulYlPet li p.Time{float: right;
+    height: 39px;
+    line-height: 39px;
+    padding-right: 10px;
+    font-family: 华文楷体;
+    color: rgba(0,0,0,.5);}
+
+.ulGetPet{width:300px;margin-left:10px;list-style:none;float:left;}
+.ulGetPet li{height:39px;line-height:39px;border-bottom:dotted 1px #ddd;}
+.ulGetPet li a.Title{float: left;
+    height: 39px;
+    line-height: 39px;
+    font-family: 华文楷体;
+    font-size: 15px;}
+.ulGetPet li a.Title:hover{color:#F65;}
+.ulGetPet li p.Time{float: right;
+    height: 39px;
+    line-height: 39px;
+    padding-right: 10px;
+    font-family: 华文楷体;
+    color: rgba(0,0,0,.5);}
+
+.ulLostPet{width:300px;margin-left:10px;list-style:none;float:left;}
+.ulLostPet li{height:39px;line-height:39px;border-bottom:dotted 1px #ddd;}
+.ulLostPet li a.Title{float: left;
+    height: 39px;
+    line-height: 39px;
+    font-family: 华文楷体;
+    font-size: 15px;}
+.ulLostPet li a.Title:hover{color:#F65;}
+.ulLostPet li p.Time{float: right;
+    height: 39px;
+    line-height: 39px;
+    padding-right: 10px;
+    font-family: 华文楷体;
+    color: rgba(0,0,0,.5);}

@@ -1,0 +1,261 @@
+﻿*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    font-family:Arial;
+    font-size:12px
+}
+.wrap{
+    overflow-x:hidden;
+    background-color:#fff;
+}
+.wrap .wrap-nav{
+    width:100%;
+    height:90px;
+}
+.wrap .wrap-nav .nav{
+    width:1000px;
+    height:90px;
+    margin:0 auto;
+    position:relative;
+}
+.wrap .wrap-nav .nav .nav-left{
+    position:absolute;
+    top:20px;
+    width:200px;
+    height:70px;
+}
+.wrap .wrap-nav .nav .nav-left img{
+    width:200px;
+    height:70px;
+}
+.wrap .wrap-nav .nav div.nav-right{
+    position:absolute;
+    right:0;
+    top:50px;
+}
+.wrap .wrap-nav .nav .nav-right a{
+    font-size:14px;
+    color:#787878;  
+}
+.wrap-nav .nav-right a span{ 
+    position:absolute;
+    left:-20px;
+    top:3px;
+    display:block;
+    width:18px;
+    height:14px;
+    background:url(../Images/小图标/msg.png) no-repeat;
+    margin-right:5px;
+}
+/*中心内容区*/
+.wrap .login-bg{
+    background-color:#2084ff;
+    width:100%;
+    height:540px;
+    border-bottom:2px solid #eee;
+}
+.wrap .login-bg .login{
+    height:540px;
+    width:1000px;
+    margin:0 auto; 
+    display:flex;
+    position:relative;
+}
+.wrap .login-bg .login .login-left{
+    width:620px;
+    height:540px;
+}
+.login-bg .login .login-left .left-img{
+    margin-top:50px;
+    margin-left:30px;
+}
+.login .login-left .left-img img{
+    height:420px;
+    width:500px;
+    border-radius:100px;
+}
+/*login板块*/
+.wrap .login-bg .login .login-right{
+    width:380px;
+    height:540px;
+}
+.wrap .login-bg .login .login-right .login-form{
+    width:340px;
+    height:400px;
+    position:absolute;
+    right:0px;
+    top:70px;
+    border:1px solid #eef2f4;
+    box-shadow:0 1px 2px #eee;
+}
+.login .login-right .login-form .info{
+    position:absolute;
+    top:-20px;
+    color:#FFF;
+    /*color:#828282;*/
+}
+.login-right .login-form .info a{
+    color:#fff;
+}
+.login .login-right .login-form .userlogin{
+    margin-left:20px;
+    margin-top:25px;
+}
+.login .login-right .login-form .userlogin span{
+    font-size:20px;
+}
+.login .login-right .login-form form{
+    margin:20px;
+}
+.login-right .login-form form .item{
+    position:relative;
+    margin-bottom:20px;
+    z-index:1;
+}
+.login-form form .item-fore1,
+.login-form form .item-fore2{
+    height:38px;
+    width:300px;
+    border:1px solid #bdbdbd;
+}
+.login-right .login-form form .item .login-label{
+    position:absolute;
+    z-index:3;
+    top:0;
+    left:0;
+    width:38px;
+    height:38px;
+    border-right:1px solid #bdbdbd;
+    background:url(../Images/小图标/login-icons.png) no-repeat;
+}
+.login-right .login-form form .item .name-label{
+    background-position:0 0;
+}
+.login-right .login-form form .item .pwd-label{
+    background-position:-48px 0;
+}
+.login-form form .item .itxt{
+    border:0;
+    float:none;
+    width:250px;
+    padding:10px 0 10px 50px;
+    height:18px;
+    line-height:18px;
+    font-size:14px;
+    overflow:hidden;
+}
+.login-form form .item-fore3{
+    height:38px;
+    width:300px;
+}
+.login-form form .hide{
+    display:none;
+}
+.login-form form .item .input-group-addon{
+    position:absolute;
+    display:inline-block;
+    z-index:3;
+    top:0;
+    left:0px;
+    width:38px;
+    height:38px;
+    border-right:1px solid #bdbdbd;
+}
+.login-form form .item .itxt02{
+    position:relative;
+    border:0;
+    left:0px;
+    height:18px;
+    width:100px;
+    text-align:left;
+    padding:10px 0 10px 50px;
+}
+
+form #o-authcode.item .itxt{
+    font-size:14px;
+    border:1px solid #bdbdbd;
+    vertical-align:middle;
+    margin-right:10px;
+}
+.login-form .item-fore4{
+    width:300px;
+    height:38px;
+    /*border:1px solid #bdbdbd;*/
+}
+.login-form .item-fore4 .safe{
+    position:relative;
+}
+.login-form .item .safe span{
+    position:absolute;
+    top:14px;
+    left:15px;
+}
+.login-form .item .safe span.forget-pw-safe{
+    position:absolute;
+    left:250px;
+}
+.login-form .item .safe #autologin{
+    margin-top:17px;
+}
+/*登录*/
+.login-form .form .item-fore5{
+    width:300px;
+    height:38px;
+}
+.login-form .form .item-fore5 .login-btn{
+    text-align:center;
+    line-height:38px;
+    background-color:#ea4949;
+}
+.form .item-fore5 .login-btn .btn-img{
+    display:inline-block;
+    width:300px;
+    height:38px;
+    color:#fff;
+    font-size:16px;
+    font-weight:bolder;
+}
+/*立即注册*/
+.login-form .coagent{
+    position:relative;
+    width:300px;
+    height:38px;
+    margin:0 auto;
+}
+.login-form .coagent .regist-link{
+    position:absolute;
+    right:0px;
+}
+.coagent .regist-link a{
+    color:#ea4949;
+    font-size:14px;
+    font-weight:600;
+}
+.regist-link a b{
+    display:inline-block;
+    width:22px;
+    height:22px;
+    overflow:hidden;
+    background:url(../Images/小图标/login-icons.png) -97px -73px no-repeat;
+    vertical-align:middle;
+    margin-left:5px;
+}
+/*footer*/
+.wrap .w{
+    margin-top:20px;
+    width:100%;
+    height:80px;
+}
+.wrap .w .content{
+    height:100px;
+    width:1000px;
+    margin:0 auto;
+}
+.wrap .w .content a{
+    margin:0 10px;
+    color:#666;
+}
+
+

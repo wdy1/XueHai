@@ -1,0 +1,137 @@
+﻿*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    font-family:Arial;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+	color: #3c3c3c;
+	overflow-x: hidden;
+}
+/*导航栏*/
+ .top-nav-wrap{
+    width:100%;
+    height:105px;
+}
+ .top-nav-wrap .top-nav{
+    width:1190px;
+    height:35px;
+    margin:0 auto;
+    font-size:14px;
+}
+ .top-nav-wrap .top-nav .nav-left{
+    float:left;
+}
+ .top-nav-wrap .top-nav .nav-right{
+    float:right;
+}
+ .top-nav-wrap .top-nav ul li{
+    float:left;
+    margin-right:7px;
+}
+ .top-nav-wrap .top-nav ul .china{
+    line-height:35px;
+    font-size:12px;
+    color:#3c3c3c;
+}
+ .top-nav-wrap .top-nav .c-span{
+    padding:0 6px;
+}
+ .top-nav-wrap .top-nav a{
+    color: #6c6c6c;
+	font-size: 12px;
+	line-height: 35px;
+	padding: 0 6px;
+}
+ .top-nav-wrap .top-nav a:hover{
+    color:#f40;
+}
+ .top-nav-wrap .top-nav a.login{
+    color:#f40;
+}
+ .top-nav-wrap .top-nav .bg-pic {
+	display: inline-block;
+	width: 6px;
+	height: 3px;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+ .top-nav-wrap .top-nav .bg-pic.xsj-pic {
+    background-image: url(../../images/小图标/xsj.png);
+}
+ .top-nav-wrap .top-nav .bg-pic.shopCar-pic {
+	background-image: url(../../images/小图标/gwc.png);
+	width: 12px;
+	height: 12px;
+}
+ .top-nav-wrap .top-nav .bg-pic.like-pic {
+	background-image: url(../../images/小图标/star.png);
+	width: 12px;
+	height: 12px;
+}
+ .top-nav-wrap .top-nav .bg-pic.web-nav-pic {
+	background-image: url(../../images/小图标/dh.png);
+	width: 10px;
+	height: 10px;
+}
+ .top-nav-wrap .top-nav .cut-off span{
+	line-height: 35px;
+	color: #ddd;
+}
+/*广告*/
+ .top-nav-wrap .ad-wrap{
+    background-color:#fff;
+    /*width:100%;
+    height:70px;*/
+}
+ .top-nav-wrap .ad-wrap .ad{
+    margin:0 auto;
+    width:1190px;
+    height:70px;
+}
+ .top-nav-wrap .ad-wrap .ad img{
+    height:60px;
+    width:1190px;
+    margin-top:5px;
+}
+
+ .top-nav .nav-left .cl li:hover,
+ .top-nav .nav-right .top-nav-menu .fav li:hover,
+ .top-nav .nav-right .top-nav-menu .home li:hover{
+    background-color:#f4f4f4;
+}
+ .top-nav .nav-left .cl,
+ .top-nav .nav-right .top-nav-menu .fav,
+ .top-nav .nav-right .top-nav-menu .home{
+    font-size:12px;
+    color:#6c6c6c;
+    background-color:#fff;
+    position:absolute;
+    top:35px; 
+    z-index:9999999;
+    display:none;
+    width:70px;
+    border:1px solid #f4f4f4;
+}
+ .top-nav .nav-left .cl li,
+ .top-nav .nav-right .top-nav-menu .fav li,
+ .top-nav .nav-right .top-nav-menu .home li{
+    height:35px;
+    width:70px;
+}
+ .top-nav .nav-left .cl li a,
+ .top-nav .nav-right .top-nav-menu .fav li a,
+ .top-nav .nav-right .top-nav-menu .home li a{
+    line-height:35px;
+}
+ .top-nav .nav-right .top-nav-menu{
+    position:relative;
+}
+
+
+
+

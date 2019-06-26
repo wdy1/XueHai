@@ -1,0 +1,90 @@
+﻿
+/*a:link, a:visited {
+color : #fff;
+text-decoration : none;
+}*/
+.slideA{color:#fff;text-decoration:none;}
+a img {
+border : 0;
+}
+div#slide-holder {
+z-index:5;
+position:relative;
+margin-top:0px;
+background-color:white;
+}
+.luobotu{width:100%;height:500px;margin:0 auto;}
+div#slide-holder div#slide-runner {
+top : 0px;
+left : 0px;
+width : 100%;
+height : 100%;
+overflow : hidden;
+position : absolute;
+}
+.btn-previ{position:absolute;left:0;height:20%;width:50px;background-color:#000000;opacity:0.3;z-index:99;top:40%;cursor:pointer;}
+.btn-next{position:absolute;height:20%;width:50px;background-color:#000000;opacity:0.3;right:0px;z-index:99;top:40%;cursor:pointer;}
+.slide-Menu{position:absolute;height:400px;top:50px;right:100px;z-index:99;width:400px;}
+.slide-Menu dl dd.name {font: 24px/24px "Microsoft YaHei";color: #f65;padding: 30px 0 0;float:left;z-index:10;}
+.slide-Menu dl dd.name:hover{color:rebeccapurple;}
+.slide-Menu dl dd {font: 14px/14px "Microsoft YaHei";color: #666;padding: 15px 0 0;float:right;}
+.slide-Menu dl dt {float: left;width: 37px;height: 25px;background: url("/Images/小图标/icon.png") no-repeat;margin: 30px 15px 0;}
+.slide-Menu a{width:199px;margin-right:1px;height:99px;margin-top:1px;float:left;background-color:white;}
+.slide-Menu dl dt.SC{background-position: 0 -33px;margin: 30px 15px 0 14px;}
+.slide-Menu dl dt.FW{background-position: -60px -33px;width: 36px;height: 29px;}
+.slide-Menu dl dt.LT{background-position: -120px -33px;width: 36px;height: 29px;}
+.slide-Menu dl dt.BK{background-position: -180px -33px;width: 36px;height: 29px;}
+.slide-Menu dl dt.GY{background-position: 0 -33px;margin: 30px 15px 0 14px;}
+.slide-Menu dl dt.ZX{background-position: -60px -33px;width: 36px;height: 29px;}
+.slide-Menu dl dt.YL{background-position: -120px -33px;width: 36px;height: 29px;}
+.slide-Menu dl dt.MX{background-position: -180px -33px;width: 36px;height: 29px;}
+div#slide-holder img {
+margin : 0;
+width:100%;
+height:100%;
+position : absolute;
+}
+div#slide-holder div#slide-controls {
+left : 0;
+bottom : 0px;
+width : 100%;
+height : 46px;
+display : none;
+position : absolute;
+background-color:#080808;
+opacity:0.5;
+}
+div#slide-holder div#slide-controls p.text {
+float : left;
+color : #fff;
+display : inline;
+font-size : 10px;
+line-height : 16px;
+margin : 15px 0 0 20px;
+text-transform : uppercase;
+}
+div#slide-holder div#slide-controls p#slide-nav {
+float : right;
+height : 24px;
+display : inline;
+margin : 11px 15px 0 0;
+}
+div#slide-holder div#slide-controls p#slide-nav a {
+float : left;
+width : 24px;
+height : 24px;
+display : inline;
+font-size : 11px;
+margin : 0 5px 0 0;
+line-height : 24px;
+font-weight : bold;
+text-align : center;
+text-decoration : none;
+background-position : 0 0;
+background-image :url(../Images/小图标/silde-nav.png);
+background-repeat : no-repeat;
+}
+div#slide-holder div#slide-controls p#slide-nav a.on {
+background-position : 0 -24px;
+}
+

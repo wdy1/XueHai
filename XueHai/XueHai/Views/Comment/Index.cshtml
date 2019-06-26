@@ -1,0 +1,234 @@
+﻿@model Models.Goods
+@{
+    ViewBag.Title = "商品评论";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/content/wdy/element-ui.css" rel="stylesheet" />
+<link href="~/content/wdy/s1.css" rel="stylesheet" />
+<script src="~/scripts/jquery-3.3.1.js"></script>
+<script src="~/scripts/vue.js"></script>
+<script src="~/scripts/element-ui.js"></script>
+
+<div class="sp" style="height:280px;width:1000px;margin:30px auto;display:flex">
+    <div style="display:none" id="goodid">@Html.DisplayFor(model => model.Goods_id)</div>
+    <div style="height:250px;width:250px;margin:15px;"><a href="@Url.Action("Details", "Goods", new { gid =  Model.Goods_id})"><img src="@Html.DisplayFor(model => model.GoodsImage)" alt="" /></a></div>
+    <span title="@Html.DisplayFor(model => model.GoodsJianjie)" style="display:inline-block; font-size:16px;color:#303030;font-weight:600;height:30px;margin:auto;line-height:30px;width:700px">@Html.DisplayFor(model => model.GoodsJianjie)</span>
+</div>
+<div id="app">
+    <div class="commentAll">
+        <div class="reviewArea">
+            <div class="flex-text-wrap">
+                
+                <textarea class="el-textarea__inner" rows="4" style="resize: none" maxlength="140" placeholder="输入评论内容"></textarea>
+                
+                <div class="pl-btn-area">
+                    <el-button class="pl-btn" type="success" icon="el-icon-edit" v-on:click="PL">评论</el-button>
+                </div>
+            </div>
+        </div>
+        <div class="comment-show">
+            @Html.Action("CommentSummery", "Comment")
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function SelectText(ele) {
+        var _this=ele;
+        var node;
+        var child=Array.from(_this.childNodes);
+        var length=child.length;
+        for(var i=0;i<length;i++){
+            if(child[i].nodeName.toUpperCase() == 'TEXTAREA'){
+                node=child[i];
+                break;
+            }
+        }
+        return node;
+    }
+    //格式化事件函数
+    function fd() {
+        var myDate=new Date();
+        var year=myDate.getFullYear();
+        var month=myDate.getMonth()+1;
+        var date=myDate.getDate();
+        var h=myDate.getHours();
+        var m=myDate.getMinutes();
+        if(m<10)
+            m='0'+m;
+        var s= myDate.getSeconds();
+        if(s<10)
+            s='0'+s;
+        var now=`${year}-${month}-${date} ${h}:${m}:${s}`;
+        return now;
+    }
+</script>
+<script type="text/javascript">
+
+    var app=new Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods:{
+            PL(e){
+                var val=SelectText(e.currentTarget.parentNode.parentNode).value;
+                console.log(val);
+                //截取前后所有空格后的字符串
+                if(val.replace(/(^\s*)|(\s*$)/g,"")==''){
+                    this.$message({
+                        message:'评论内容不能为空哦',
+                        type:'warning'
+                    });
+                }else{
+                    this.$message({
+                        message: '评论成功',
+                        type:'success'
+                    });
+                }
+            },
+        }
+    });
+
+</script>
+<script type="text/javascript">
+        $('.commentAll').on('click', '.pl-btn', function () {
+            //获取评论内容
+            var Com_content = $(this).parent().siblings().eq(0).val();
+            var go = document.getElementById("goodid");
+            var goodid = go.innerHTML;
+            console.log(goodid);
+            var now = fd();
+            if (Com_content.replace(/(^\s*)|(\s*$)/g, "") != "") {
+                $.ajax({
+                    url: '/Comment/CommentSummery',
+                    type: 'post',
+                    data: JSON.stringify({ "Goods_id": goodid, "ComContent": Com_content }),
+                    contentType: 'application/json;charset=utf-8',
+                    success: function (data) {
+                        console.log("成功");
+                        $(".comment-show").html(data);
+                    },
+                    error: function () {
+                        console.log("请求失败");
+                    }
+                });
+                
+                $(this).parent().siblings().eq(0).val("");
+            }
+        })
+</script>
+<script type="text/javascript">
+        //弹出回复区域
+        $('.comment-show').on('click', '.hf-a', function () {
+            $(this).parents('.date-dz-right').siblings('.hf-con').toggle();
+            //获取回复人姓名
+            var hfName = $(this).parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+            var a = '@("回复@")';
+            var hfN=a+hfName+"："
+            if ($(this).attr("data-type") == 1) {
+                //新浪微博形式 回复楼主时不会在输入框内显示完整“回复@username” 而是用水印代替
+                //否则去掉判断语句 直接写else中的赋值
+                $(this).parent('.date-dz-right').siblings('.hf-con').find('.el-textarea__inner').val('').attr('placeholder', hfN);
+            } else {
+                $(this).parents('.date-dz-right').siblings('.hf-con').find('.el-textarea__inner').val(hfN);
+            }
+        });
+        //生成回复
+        $('.comment-show').on('click', '.hf-btn', function () {
+            var $this = $(this);
+            var now = fd();
+            //获取回复的目标
+            var target = parseInt($this.parents('.date-dz').siblings('.pl-text').find('.comment-size-name').attr('data-user-id'),10);
+            //获取回复所处的楼层
+            var parentComId = parseInt($this.parents(".comment-show-con-list").attr("data-id"),10);
+            var allval = $(this).parent().siblings('textarea').val();
+            var HfName = $(this).parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+            var oAll ='@("回复@")' +HfName + "：";
+            //
+            var splitLength = HfName.length + 4;
+            var splitVal = allval.substring(splitLength);
+            var Hf_Obj = {
+                rep_to_userid: target,
+                rep_userid: 3,
+                date: now,
+                Com_id:parentComId
+            };
+
+            if (oAll == allval || allval.replace(/^ +| +$/g, "") == '') {
+                console.log("您什么也没输入");
+            } else if(allval.length<splitLength || $this.is('.parent')){
+                Hf_Obj.Com_type = 2;
+                Hf_Obj.Com_content = allval;
+            } else {
+                Hf_Obj.Com_type = 3;
+                Hf_Obj.Com_content = splitVal;
+            }
+            $.ajax({
+                url: '/Main/CommentSummery',
+                type: 'post',
+                data: JSON.stringify(Hf_Obj),
+                contentType: 'application/json;charset=utf-8',
+                success: function (data) {
+                    $(".comment-show").html(data);
+                },
+                error: function () {
+                    console.log("回复失败");
+                }
+            })
+
+        })
+</script>
+<script type="text/javascript">
+        //点赞逻辑
+        //点赞之后 局部页面并没有刷新 但是使用JQuery改变了元素样式而且后台会接收数据并且操作数据库
+        //所以点赞之后 即使再刷新页面 jQuery的效果还在
+        $('.comment-show').on('click', '.date-dz-z', function () {
+            var $this = $(this);
+            //获取点赞数量
+            var zNum = parseInt($this.find('.num').eq(0).html(), 10);
+            var id=$this.attr("data-id");
+            var Pr_object = {
+                UserId: 1,
+                creNum:0
+            };
+            var da_t = $this.siblings('.hf-a').attr("data-type");
+            //若为1则表示点赞评论 否则点赞回复
+            if (da_t == 1) {
+                Pr_object.ComId = id;
+            } else {
+                Pr_object.RepId = id;
+            }
+            if ($this.children().is('.noz')) {
+                if (Number.isNaN(zNum)) {
+                    zNum = 1;
+                } else
+                    zNum++;
+                Pr_object.creNum = 1;
+                //单纯的在页面上更新点赞数量
+                $this.find('.num').html(zNum);
+                $this.attr("title", "取消赞").children('span').removeClass('noz').addClass('UI_ani_praised tiao');
+
+            } else {
+                Pr_object.creNum = -1;
+                zNum = (zNum - 1 == 0) ? "赞" : zNum - 1;
+                $this.find('.num').html(zNum);
+                $this.attr("title", "赞").children('span').removeClass('UI_ani_praised tiao').addClass('noz');
+            }
+            $.ajax({
+                url: '/Main/DoPraised',
+                type: 'post',
+                data: JSON.stringify(Pr_object),
+                contentType: 'application/json;charset=utf-8',
+                success: function (data) {
+                    console.log(data.a);
+                },
+                error: function () {
+                    console.log("请求失败");
+                }
+            });
+        });
+</script>
+
+
+

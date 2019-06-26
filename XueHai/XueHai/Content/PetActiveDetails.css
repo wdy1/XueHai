@@ -1,0 +1,232 @@
+﻿.PetActiveDetails{width:1200px;margin:0 auto;overflow:hidden;margin-top:20px;}
+.PetActiveDetails .Left{width:850px;float:left;padding:20px 20px;border:solid 1px #ddd;margin-top:20px;height:1120px;}
+.PetActiveDetails .Right{width:300px;float:right;}
+.PetActiveDetails .Left .PetActiveImg{width:100%;}
+.PetActiveDetails .Left .PetActiveImg img{width:100%;}
+.PetActiveDetails .Left .Content{margin-top:30px;}
+.ulPetActive{width:100%;margin-top:10px;}
+.PetActiveDetails .Right .PetActive a.PetActiveItem{position:relative;display:inline-block;text-decoration:none;overflow:hidden;}
+.PetActiveDetails .Right .PetActive a.PetActiveItem img{width:100%;transition:all 0.5s ease;}
+.PetActiveDetails .Right .PetActive a.PetActiveItem:hover img{transform:scale(1.1);}
+.PetActiveDetails .Right .PetActive a.PetActiveItem p{position:absolute;left:0px;bottom:0px;text-align:center;height:30px;line-height:30px;font-family:华文楷体;font-size:15px;background:rgba(0, 0, 0, 0.70);width:100%;}
+.HotUserPhotos{width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border: solid 1px #d8d5d5;
+    box-sizing: border-box;}
+.ulPetPhotos{width:100%;margin-top:10px;}
+.ActiveRank{width:1200px;margin:0 auto;overflow:hidden;height:400px;margin-top:20px;}
+.ActiveRank .RankTwo{width:33.3%;float:left;margin-top:75px;}
+.ActiveRank .RankTwo .User{width:100%;text-align:center;height:230px;}
+.ActiveRank .RankTwo .User img{width:200px;height:200px;margin:0 auto;border-radius:100px;overflow:hidden;transition:all 0.5s ease;}
+.ActiveRank .RankTwo .User img:hover{transform:scale(1.1);transform:rotate(360);}
+.ActiveRank .RankTwo .User p{width:100%;height:30px;line-height:30px;font-family:华文楷体;font-size:20px;color:#ffd800;}
+.ActiveRank .RankTwo .RankImg{width:125px;margin:0 auto;}
+.ActiveRank .RankTwo .RankImg img{width:100%;transition:all 0.5s ease;cursor:pointer;}
+.ActiveRank .RankTwo .RankImg img:hover{transform:scale(1.1);}
+.ActiveRank .RankOne{width:33.3%;float:left;}
+.ActiveRank .RankOne .User{width:100%;text-align:center;height:280px;}
+.ActiveRank .RankOne .User img{width:250px;height:250px;margin:0 auto;border-radius:125px;overflow:hidden;transition:all 0.5s ease;}
+.ActiveRank .RankOne .User img:hover{transform:scale(1.1);}
+.ActiveRank .RankOne .User p{width:100%;height:30px;line-height:30px;font-family:华文楷体;font-size:20px;color:#ffd800;}
+.ActiveRank .RankOne .RankImg{width:150px;margin:0 auto;}
+.ActiveRank .RankOne .RankImg img{width:100%;transition:all 0.5s ease;cursor:pointer;}
+.ActiveRank .RankOne .RankImg img:hover{transform:scale(1.1);}
+.ActiveRank .RankThree{width:33.3%;float:left;margin-top:135px;}
+.ActiveRank .RankThree .User{width:100%;text-align:center;height:190px;}
+.ActiveRank .RankThree .User img{width:160px;height:160px;margin:0 auto;border-radius:80px;overflow:hidden;transition:all 0.5s ease;}
+.ActiveRank .RankThree .User img:hover{transform:scale(1.1);}
+.ActiveRank .RankThree .User p{width:100%;height:30px;line-height:30px;font-family:华文楷体;font-size:20px;color:#ffd800;}
+.ActiveRank .RankThree .RankImg{width:100px;margin:0 auto;}
+.ActiveRank .RankThree .RankImg img{width:100%;transition:all 0.5s ease;cursor:pointer;}
+.ActiveRank .RankThree .RankImg img:hover{transform:scale(1.1);}
+
+.BigPetStar {
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.PetStarLeft {
+    width: 35%;
+    float: left;
+    height: 20px;
+    border-bottom: solid 1px rgba(0,0,0,.4);
+}
+.PetStarMiddle {
+    width: 30%;
+    height: 50px;
+    float: left;
+    text-align: center;
+}
+.PetStarMenu {
+    width: 320px;
+    margin: 0 auto;
+    height: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.StarLogo {
+    margin: 0px 15px 0 14px;
+    background: url("/Images/小图标/icon.png") no-repeat;
+    background-position: 0 -33px;
+    height: 40px;
+    width: 40px;
+}
+.Star {
+    height: 40px;text-decoration:none;
+}.ENG1 {
+    font-family: 华文隶书;
+    font-size: 30px;
+    font-weight: 700;
+    color: #F65;
+}.PetStarLeft {
+    width: 35%;
+    float: left;
+    height: 20px;
+    border-bottom: solid 1px rgba(0,0,0,.4);
+}
+
+
+.UserWorks{width:1200px;margin:0 auto;overflow:hidden;}
+.UserWorks .WorkItem{width:900px;float:left;padding:10px;border:solid 1px #ddd;}
+.UserWorks .WorkItem .User{width:100%;height:40px;padding-left:20px;border-bottom:solid 1px #ddd;}
+.UserWorks .WorkItem .User img{width:30px;height:30px;margin-top:5px;border-radius:15px;overflow:hidden;float:left;}
+.UserWorks .WorkItem .User span{height:40px;line-height:40px;font-family:华文楷体;color:#F65;font-size:18px;margin-left:15px;}
+.UserWorks .WorkItem .WorkImg{width:100%;margin-top:10px;overflow:hidden;}
+.UserWorks .WorkItem .WorkImg .Img{width:700px;float:left;}
+.UserWorks .WorkItem .WorkImg .Img img{width:700px;height:460px;}
+.UserWorks .WorkItem .WorkImg .SupportNum{width:160px;height:150px;float:left;text-align:center;}
+.UserWorks .WorkItem .WorkImg .SupportNum p{width:80px;height:30px;line-height:30px;font-family:Cambria;font-size:18px;color:#ff0000;text-align:center;margin-left:35px;}
+.UserWorks .WorkItem .WorkImg .SupportNum .SupportImg{width:80px;height:80px;background:#F65;border-radius:40px;overflow:hidden;text-align:center;margin-top:210px;margin-left:35px;transition:all 1s ease;cursor:pointer;}
+.UserWorks .WorkItem .WorkImg .SupportNum .SupportImg:hover{background:rgba(255, 102, 85, 0.60);}
+.UserWorks .WorkItem .WorkImg .SupportNum .SupportImg img{width:80px;height:80px;}
+.UserWorks .WorkItem .Introduce{width:100%;margin-top:10px;overflow:hidden;}
+.UserWorks .WorkItem .Introduce .IntroduceTitle{width:73px;height:17px;background:url(../Images/背景/bg-answer.png);line-height:17px;text-align:center;float:left;font-family:华文楷体;color:white;font-size:12px;margin-top:6px;margin-right:5px;}
+.UserWorks .WorkItem .Introduce p{width:650px;float:left;line-height:30px;font-family:华文楷体;font-size:17px;text-align:left;}
+
+.Competition{width:100%;text-align:center;}
+.Competition .sc {
+    display: inline-block;
+    width: 350px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 20px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    background: #d96f15;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+.PublishWorks{width:100%;height:100%;position:fixed;background:rgba(0,0,0,.4);left:0px;top:0px;display:none;}
+.PublishWorks .DivClose {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.WorkInfo {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -280px;
+    margin-left: -300px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #f80;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.shop-title {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    padding: 5px 0 5px 30px;
+    color: #666;
+    border-bottom: 1px solid #e0e0e0;
+}.shop-title .shop-name {
+    font-size: 16px;
+    font-family: Microsoft YaHei, Arial;
+    line-height: 1;
+    color: #111;
+    font-weight: bold;
+    color: #f80;
+}.shop-title .shop-name > i {
+    position: relative;
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: sub;
+    border: none;
+    background: #2d7ee2;
+}
+ .WorkInfo .SelectShopImg {
+    width: 500px;
+    margin: 0 auto;
+    height: 280px;
+}
+ .WorkInfo .ReplaceImg {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+}
+.TxtIntroduce{width:100%;text-align:center;}
+.txtworkIntroduce {
+    line-height: 20px;
+    height: 80px;
+    width: 500px;
+    padding: 0 16px;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px #eee;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    color: #333;
+}
+.WorkInfo .divSC {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top:10px;
+}
+.WorkInfo .divSC a {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 20px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+.WorkInfo .divSC a.sc {
+    background: #ff6900;
+    text-decoration: none;
+    position: absolute;
+    margin-left: -115px;
+    transition:all 1s ease;
+}
+.WorkInfo .divSC a.sc:hover{background:#F65;}
+

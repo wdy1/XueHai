@@ -1,0 +1,143 @@
+﻿.PetCategory-Top{width:1200px;margin:0 auto;height:50px;margin-top:5px;}
+.PetCategory-Top .PetImg{width:50px;height:50px;float:left;}
+.PetCategory-Top .DogItem{height:50px;float:left;width:1100px;margin-left:20px;}
+.PetCategory-Top .DogItem li{height:50px;list-style:none;float:left;text-align:center;margin-left:10px;margin-right:10px;}
+.PetCategory-Top .DogItem li .item-Name{width:100%;height:100%;}
+.item-Name a{height:50px;line-height:50px;text-align:center;font-family:KaiTi;font-size:16px;color:#808080;}
+.PetCategory-Middle{width:1200px;margin:0 auto;border:solid 1px #ddd;height:420px;margin-top:20px;}
+
+.PetSearch{height:60px;width:100%;margin:0 auto;border-bottom:solid 1px #ddd;margin-left:20px;}
+.PetSearchname{float:left;height:60px;border-bottom:solid 3px #f65;}
+.PetSearch .PetSearchname span{font: 24px/24px "Microsoft YaHei";color: #f65;height:60px;line-height:60px;}
+.fr{float:right;}
+.PetSearch .PetCategory{margin-right:50px;}
+.PetSearch .PetCategory .pet{width: 88px;
+    position: relative;
+    float: left;
+    text-indent: 40px;
+    margin-top:15px;
+    height:30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family:KaiTi;
+    color: #c6c5c5;
+    border-right:solid 1px #ddd;
+    transition: all 0.2s;}
+.PetCategory .dog:hover{color:#ff9041;}
+.PetCategory .cat:hover{color:#ff6e4e;}
+.PetCategory .rabbit:hover{color:#56c8fa;}
+.PetCategory .qita:hover{color:#83d684;}
+.PetSearch .PetCategory .pet:before{width: 31px;
+    height: 27px;
+    position: absolute;
+    top:2px;
+    left: 10px;
+    content: "";
+    background: url(../Images/小图标/icon-pets-filter-new.png) no-repeat;
+    transition: all 0.2s;
+}
+.PetSearch .PetCategory .cat:before{background-position:-31px 0;}
+.PetSearch .PetCategory .rabbit:before{background-position:-62px 0;}
+.PetSearch .PetCategory .qita:before{background-position:-124px 0;}
+.PetSearch .PetCategory .dog.current:before{background-position:0px -27px;}
+.PetSearch .PetCategory .cat.current:before{background-position:-31px -27px;}
+.PetSearch .PetCategory .rabbit.current:before{background-position:-62px -27px;}
+.PetSearch .PetCategory .qita.current:before{background-position:-124px -27px;}
+.PetSearch .PetCategory a{text-decoration:none;cursor:pointer;}
+/*条件查询*/
+.CategorySearch li{width:1150px;height:55px;text-align:center;border-bottom:dotted 3px #ddd;margin:0 auto;}
+.CategoryName{width:150px;height:55px;text-align:center;font-family:KaiTi;font-size:18px;line-height:55px;float:left;font-weight:700;}
+.CategoryNameItem{height:55px;float:left;}
+.CategoryNameItem span{cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #868686;
+    border-radius: 5px;
+    margin: 5px;
+    font-family:KaiTi;font-size:17px;
+}
+.CategoryNameItem span:hover{background-color:#f2473d;color:white;}
+.CategoryNameItem span.active{background-color:#f2473d;color:white;}
+
+/*显示*/
+.PetCategory-Bottom{width:1200px;margin:0 auto;margin-top:20px;position:relative;}
+.PetCategory-Bottom .Left{width:820px;border:solid 1px #ddd;float:left;margin-top:20px;}
+.sreachNum .EN{height:40px;line-height:40px;font-family:KaiTi;font-size:17px;font-weight:600;}
+.sreachNum .num{height:40px;line-height:40px;font-family:KaiTi;font-size:18px;color:red;font-weight:700;}
+.PetCategory-Bottom .Left .sreachNum{width:800px;margin:0 auto;height:40px;border-bottom:dotted 3px #ddd;}
+.PetCategory-Bottom .Right{width:300px;float:left;margin-left:40px;}
+.BigPetItem{width:800px;margin:0 auto;}
+.BigPetItem .PetItem{width:100%;height:250px;border-bottom:dotted 3px #ddd;margin:0 auto;position:relative;}
+.BigPetItem .PetItem .itemImg{width:250px;height:210px;margin-top:20px;float:left;}
+.BigPetItem .PetItem .itemItr{width:510px;margin-left:20px;float:left;height:230px;margin-top:10px;}
+.BigPetItem .PetItem .itemItr .itr1{width:100%;height:50px;}
+.BigPetItem .PetItem .itemItr .itr1 li{width:50%;height:100%;float:left;}
+.BigPetItem .PetItem .itemItr .itr1 li a{height:50px;line-height:50px;font-family:Microsoft yahei,arial;font-size:21px;font-weight:600;color:black;}
+.BigPetItem .PetItem .itemItr .itr1 li a:hover{color:red;}
+.BigPetItem .PetItem .itemItr .itr1 li span{height:50px;line-height:50px;font-family:Microsoft yahei,arial;font-size:21px;font-weight:600;color:red;float:right;}
+.BigPetItem .PetItem .itemItr .itr2{width:100%;}
+.BigPetItem .PetItem .itemItr .itr2 li{width:170px;float:left;margin-left:70px;margin-right:10px;margin-top:5px;}
+.BigPetItem .PetItem .itemItr .itr2 li .flag{position:absolute;margin-left:-70px;color:#808080;font-family:Microsoft yahei,arial;font-size:18px;margin-right:10px;}
+.BigPetItem .PetItem .itemItr .itr2 li .part{font-family:KaiTi;font-size:17px;color:black;min-height:30px;}
+
+.fa{display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;}
+.PetAddLove{width:100%;height:30px;position:absolute;bottom:10px;}
+.PetAddLove a{display: inline-block;
+    margin: 0 10px;
+    padding: 4px 40px 4px 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    font-family:KaiTi;
+    text-decoration:none;
+}
+.PetAddLove a:hover{border:3px solid #756f6f;}
+.PetAddLove a i{margin-right: 5px}
+.PetAddLove a.gz{background: #00c9d0;}
+.PetAddLove{width:100%;height:30px;position:absolute;bottom:10px;}
+.PetPage{width:100%;margin:20px auto;text-align:center;}
+.PetPage .gz{display: inline-block;
+    margin: 0 10px;
+    padding: 4px 20px 4px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    font-family:KaiTi;
+    text-decoration:none;
+}
+.PetPage .gz:hover{border:3px solid #756f6f;}
+.PetPage .gz i{margin-right: 5px}
+.PetPage a.gz{background: #00c9d0;}
+.PetPage .gz1{display: inline-block;
+    margin: 0 5px;
+    padding: 2px 10px 2px 10px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    font-family:KaiTi;
+    text-decoration:none;
+}
+.PetPage .gz1:hover{border:3px solid #756f6f;}
+.PetPage .gz1 i{margin-right: 5px}
+.PetPage a.gz1{background: #00c9d0;}
+.PetPage .gz2{display: inline-block;
+    margin: 0 5px;
+    padding: 2px 10px 2px 10px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    font-family:KaiTi;
+    text-decoration:none;
+}
+.PetPage .gz2:hover{border:3px solid #756f6f;}
+.PetPage .gz2 i{margin-right: 5px}
+.PetPage a.gz2{background: #f65;}
+
+

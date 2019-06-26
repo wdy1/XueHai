@@ -1,0 +1,280 @@
+﻿*{padding:0px;margin:0px;}
+.BigPetDisease{width:1200px;margin:0 auto;overflow:hidden;margin-top:20px;}
+.BigPetDisease .DiseaseLeft{width:820px;float:left;overflow:hidden;}
+.BigPetDisease .DiseaseRight{width:360px;float:left;margin-left:20px;overflow:hidden;}
+.BigPetDisease .DiseaseLeft .TopCommonDisease{width:100%;background:#808080;}
+.ulHotClassArticle li:nth-of-type(odd){list-style:none;width:400px;margin-right:10px;float:left;overflow:hidden;}
+.ulHotClassArticle li:nth-of-type(even){list-style:none;width:400px;margin-left:10px;float:left;overflow:hidden;}
+.ulHotClassArticle li a{position:relative;width:100%;height:260px;overflow:hidden;display:inline-block;}
+.ulHotClassArticle li a img{height:260px;min-width:400px;transition:all 0.5s ease;}
+.ulHotClassArticle li a:hover img{transform:scale(1.1);}
+.ulHotClassArticle li a .Introduce{position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    font-family: Microsoft yahei,arial;
+    color: white;
+    margin: 0px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    text-overflow: ellipsis;}
+.ulHotClassArticle li a .Introduce:hover{color:red;}
+.ulHotClassArticle li .JJ{width:100%;line-height:20px;font-family: Microsoft yahei,arial;font-size:14px;letter-spacing:2px;padding:0 10px;}
+
+.BigPetDisease .DiseaseLeft .DiseaseEncyclopedias{width:100%;overflow:hidden;margin-top:20px;padding:5px 15px;border:solid 1px #d8d5d5;box-sizing:border-box;}
+.BigPetDisease .DiseaseRight .PetCommonDiseasePostion{width:100%;height:460px;padding:5px 15px;border:solid 1px #d8d5d5;box-sizing:border-box;}
+.BigPetDisease .DiseaseRight .HotPetDisease{width:100%;overflow:hidden;margin-top:20px;padding:5px 15px;border:solid 1px #d8d5d5;box-sizing:border-box;}
+.DivTitle{height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid 1px #ddd;}
+.DivTitle .DivName{float: left;
+    height: 50px;
+    border-bottom: solid 3px #f65;}
+.DivTitle .DivName span{    font: 24px/24px "Microsoft YaHei";
+    color: #f65;
+    padding: 30px 0 0;
+    height: 50px;
+    line-height: 50px;}
+.DivTitle .Divfl{float:right;height:50px;}
+.DivTitle .Divfl ul.ulCommonPostion{width:100px;height:50px;}
+.DivTitle .Divfl ul.ulCommonPostion li{list-style:none;float:left;width:50%;box-sizing:border-box;height:20px;margin-top:15px;text-align:center;}
+.DivTitle .Divfl ul.ulCommonPostion li.dog{border-right:solid 1px #d8d5d5;}
+.DivTitle .Divfl ul.ulCommonPostion li span{font-family:华文楷体;font-size:15px;color:#808080;cursor:pointer;}
+.DivTitle .Divfl ul.ulCommonPostion li span:hover{color:#f65;}
+.BigPetDisease .DiseaseRight .PetCommonDiseasePostion .CommonPostionContent{width:100%;height:375px;}
+.BigPetDisease .DiseaseRight .PetCommonDiseasePostion .CommonPostionContent .ulPostionContent{height:375px;margin-top:20px;}
+.BigPetDisease .DiseaseRight .PetCommonDiseasePostion .CommonPostionContent .ulPostionContent li{list-style:none;float:left;height:373px;width:328px;}
+.BigPetDisease .DiseaseRight .PetCommonDiseasePostion .CommonPostionContent .ulPostionContent li.dog{background:url(../Images/背景/examine-dog.png) no-repeat;}
+.BigPetDisease .DiseaseRight .PetCommonDiseasePostion .CommonPostionContent .ulPostionContent li.cat{background:url(../Images/背景/examine-cat.png) no-repeat;display:none;}
+
+/*疾病百科模块*/
+/*导航*/
+.DivTitle .Category{height:50px;}
+.DivTitle .PetCategory .pet{width: 88px;
+    position: relative;
+    float: left;
+    text-indent: 40px;
+    margin-top:10px;
+    height:30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family:KaiTi;
+    color: #c6c5c5;
+    border-right:solid 1px #ddd;
+    transition: all 0.2s;}
+.DivTitle .PetCategory .pet.qita{border-right:none;}
+.DivTitle .PetCategory .more:hover{color:red;text-decoration:underline;}
+.PetCategory .dog:hover{color:#ff9041;}
+.PetCategory .cat:hover{color:#ff6e4e;}
+.PetCategory .rabbit:hover{color:#56c8fa;}
+.PetCategory .qita:hover{color:#83d684;}
+.DivTitle .PetCategory .pet:before{width: 31px;
+    height: 27px;
+    position: absolute;
+    top:2px;
+    left: 10px;
+    content: "";
+    background: url(../Images/小图标/icon-pets-filter-new.png) no-repeat;
+    transition: all 0.2s;
+}
+.DivTitle .PetCategory a{text-decoration:none;cursor:pointer;}
+.DivTitle .PetCategory .cat:before{background-position:-31px 0;}
+.DivTitle .PetCategory .rabbit:before{background-position:-62px 0;}
+.DivTitle .PetCategory .qita:before{background-position:-124px 0;}
+.DivTitle .PetCategory .dog.current:before{background-position:0px -27px;}
+.DivTitle .PetCategory .dog:hover:before{background-position:0px -27px;}
+.DivTitle .PetCategory .cat.current:before{background-position:-31px -27px;}
+.DivTitle .PetCategory .cat:hover:before{background-position:-31px -27px;}
+.DivTitle .PetCategory .rabbit.current:before{background-position:-62px -27px;}
+.DivTitle .PetCategory .rabbit:hover:before{background-position:-62px -27px;}
+.DivTitle .PetCategory .qita.current:before{background-position:-124px -27px;}
+.DivTitle .PetCategory .qita:hover:before{background-position:-124px -27px;}
+/*内容*/
+.BigPetDisease .DiseaseLeft .DiseaseEncyclopedias .Disease-Content{width:100%;margin-top:10px;float:left;}
+.BigPetDisease .DiseaseLeft .DiseaseEncyclopedias .Disease-Content.Cat{display:none;}
+.pet-letter{width:100%;height:50px;line-height:50px;}
+.pet-letter .flag{font-family:华文楷体;font-size:18px;font-weight:600;}
+.pet-letter a.all{font-family:KaiTi;font-size:17px;font-weight:600;}
+.pet-letter a{font-family:Algerian;color:#808080;padding:0 7px;}
+.W100{width:100%;}
+.DiseaseItem{position:relative;    border-bottom: 1px dashed #ddd;
+    font-size: 14px;margin-top:10px;margin-bottom:5px;}
+.DiseaseItem .title{line-height: 30px;
+    font-size: 16px;padding:0px;margin-top:0px;
+    padding-left: 14px;}
+.DiseaseItem .title i{height:8px;width:8px;margin-top:11px;display:inline-block;border-radius:4px;background:#f2473d;margin-right:5px;}
+.DiseaseItem .title a{height:30px;font-family:Microsoft yahei,arial;}
+.DiseaseItem .introduce{line-height:30px;font-family:Microsoft yahei,arial;font-size:16px;}
+
+.part-list {
+    width: 200%;
+    padding-top: 0;
+}
+.part-list a {
+    width: 63px;
+    height: 34px;
+    float: left;
+    margin: 2px 200px 30px 0;
+    display: block;
+     text-indent: 100%; 
+     overflow: hidden; 
+     white-space: nowrap; 
+    background-color: rgba(0,0,0,0);
+    color: #000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+}
+
+/*疾病详情页*/
+.CurrentPostion{width:1200px;margin:0 auto;height:40px;}
+.CurrentPostion span{font-family:Microsoft yahei,arial;font-size:14px;line-height:40px;color:#2c2c2c;}
+.CurrentPostion a{font-family:Microsoft yahei,arial;font-size:14px;line-height:40px;text-decoration:none;color:#2c2c2c;}
+.CurrentPostion a:hover{color:red;}
+.BigDiseaseDetails{width:1200px;margin:0 auto;overflow:hidden;margin-top:20px;}
+.BigDiseaseDetails .DetailsLeft{width:820px;float:left;overflow:hidden;border:solid 1px #d8d5d5;box-sizing:border-box;padding:10px 40px;}
+.BigDiseaseDetails .DetailsRight{width:360px;float:left;margin-left:20px;overflow:hidden;}
+.BigDiseaseDetails .DetailsLeft .basic{width:100%;}
+.BigDiseaseDetails .DetailsLeft .basic h1{font-family: Microsoft yahei, simhei,arial;
+    font-size: 20px;
+    font-weight: bold;}
+.BigDiseaseDetails .DetailsLeft .basic h2{margin-top: 0;
+    border-top: none;
+    position: relative;
+    font-weight: bold;padding: 20px 0;
+    font-size: 16px;font-family: Microsoft yahei, simhei,arial;}
+.BigDiseaseDetails .DetailsLeft .basic h2:after{content: "";
+    height: 1px;
+    top: 30px;
+    border-top: 1px dashed #ddd;
+    width: 678px;
+    position: absolute;}
+.basic-cont{padding-left:80px;width:100%;}
+.basic-cont ul{width:50%;}
+.basic-cont ul li{width:100%;padding-left: 70px;
+    float: none;
+    padding-right: 0;}
+.basic-cont ul li .flag{margin-left: -70px;position: absolute;line-height:30px;font-family: Microsoft yahei, simhei,arial;
+    color: #999;}
+.basic-cont ul li .part{    display: block;font-family: Microsoft yahei, simhei,arial;color:black;
+    word-break: break-all;
+    min-height: 30px;line-height:30px;}
+.BigDiseaseDetails .DetailsLeft .desc h2{margin-top: 0;
+    border-top: none;
+    position: relative;
+    font-weight: bold;padding: 20px 0;
+    font-size: 16px;font-family: Microsoft yahei, simhei,arial;}
+.BigDiseaseDetails .DetailsLeft .desc h2:after{content: "";
+    height: 1px;
+    top: 30px;
+    border-top: 1px dashed #ddd;
+    width: 678px;
+    position: absolute;}
+.BigDiseaseDetails .DetailsLeft .desc p{padding-left:80px;    margin-bottom: 10px;
+    line-height: 1.8;font-family:Microsoft yahei, simhei,arial;font-size:15px;color:black;}
+.DetailsRight .HotPetDisease{width:100%;border:solid 1px #d8d5d5;padding:0 15px;}
+.HotDiseaseContent li .name{max-width: 80px;
+    font-size: 16px;
+    color: #ff904e;
+    height: 35px;font-family:Microsoft yahei, simhei,arial;}
+.HotDiseaseContent li .list{overflow:hidden;}
+.HotDiseaseContent li .list a{padding: 8px;color: #000;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+    margin: 0px 8px 8px 0px;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    border: 1px solid #ddd;font-family:Microsoft yahei, simhei,arial;}
+.HotDiseaseContent li .list a:hover{color:white;background:#f65;}
+
+
+/*宠物部位疾病的遮罩层*/
+.PetPostionDisease{width:100%;height:100%;background:rgba(0, 0, 0, 0.40);position:fixed;z-index:99;left:0px;top:0px;display:none;}
+.PetPostionDisease .Content{position:absolute;left:50%;top:50%;width:500px;margin: -250px 0 0 -250px;border-radius:5px;overflow:hidden;}
+.PetPostionDisease .Content .hd{height: 50px;
+    padding: 0 25px;
+    color: #fff;
+    background-color: #f7918c;
+    border-bottom: 1px solid #f7918c;}
+h1,h2,h3,h4{font-weight: normal;
+    font-family: Microsoft yahei, simhei,arial;}
+.PetPostionDisease .Content .hd .title{line-height: 50px;padding:0px;margin:0px;font-size:18px;color:white;}
+.PetPostionDisease .Content .hd .close{width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font: bold 24px/50px simsun;
+    color: #fff;
+    border-left: 1px solid #f7918c;
+    box-shadow: 1px 0 1px #e97973 inset;}
+.PetPostionDisease .Content .bd{    min-height: 100px;
+    padding: 25px;
+    background-color: #fff;}
+.symptom-box h2{margin-bottom: 20px;margin-top:0px;
+    padding-left: 25px;
+    font-size: 17px;
+    color: #444;
+    position: relative;}
+.symptom-box h2:before{width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    border-radius: 30px;
+    left: 6px;
+    content: "";
+    background-color: #f2473d;}
+.symptom-box ul {
+    overflow: hidden;list-style:none;
+}
+.symptom-box li {
+    float: left;
+}
+.symptom-box li a {
+    margin: 0 10px 10px 0;
+    padding: 7px 20px;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #f7918c;
+    border: 1px solid #f7918c;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 2px #fff inset;text-decoration:none;font-family:Microsoft yahei, simhei,arial;
+}
+.symptom-box li a:hover{background-color:#f65;}
+/*第二步*/
+.symptom-box .para {
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 14px;
+    font: 12px/1.5 Microsoft yahei,arial;
+}
+/*第三步*/
+.symptom-box .btn-more {
+    display: block;
+    line-height: 36px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration:none;font-family:Microsoft yahei, simhei,arial;
+}
+
+
+
+
+
+
+
+
+
+
+

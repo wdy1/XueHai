@@ -1,0 +1,14 @@
+﻿.wrapper .w{
+    margin-top:20px;
+    width:100%;
+    height:80px;
+}
+.wrapper .w .content{
+    height:100px;
+    width:1000px;
+    margin:0 auto;
+}
+.wrapper .w .content a{
+    margin:0 10px;
+    color:#666;
+}

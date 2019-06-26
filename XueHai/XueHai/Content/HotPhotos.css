@@ -1,0 +1,42 @@
+﻿.HotCategory{width:100%;height:50px;}
+.hotCate{width:100px;height:50px;border-top-right-radius:10px;background:#ff6900;float:left;}
+.hotCate span{width:60px;height:50px;line-height:50px;font-family:KaiTi;font-size:16px;color:white;font-weight:500;}
+.Content .Right{float:left;width:280px;margin-left:10px;}
+.hotCate .hot1 i{width:40px;height:40px;}
+.hotCate .hot1 .bj{width:22px;height:30px;margin-top:7px;background:url(../Images/小图标/hot.png) no-repeat;background-size:cover;float:left;margin-right:2px;margin-left:5px;}
+
+.hotCateItem.Cat{width:90px;height:40px;border-top-right-radius:20px;background:#00b1ff;float:left;margin-top:10px;cursor:pointer;}
+.hotCateItem span{width:60px;height:40px;line-height:40px;font-family:KaiTi;font-size:16px;color:white;font-weight:500;}
+.hotCateItem .hot1 i{width:40px;height:40px;}
+.hotCateItem.Dog .hot1 .bj{width:27px;height:31px;margin-top:7px;background:url(../Images/小图标/icon-pets-filter-new.png) no-repeat;background-position:0 0;float:left;margin-right:2px;margin-left:5px;transition:all 0.2s ease;}
+.hotCateItem.Dog{border:none;width:90px;height:40px;background:#00b1ff;float:left;margin-top:10px;cursor:pointer;}
+.hotCateItem.Dog:hover .hot1 .bj{background-position:0 -27px;}
+.hotCateItem.Cat .hot1 .bj{width:27px;height:31px;margin-top:7px;background:url(../Images/小图标/icon-pets-filter-new.png) no-repeat;background-position:-31px 0;float:left;margin-right:2px;margin-left:5px;transition:all 0.2s ease;}
+.hotCateItem.Cat:hover .hot1 .bj{background-position:-31px -27px;}
+.hotCateItem:hover span{color:#a14c0f;}
+.HotPts{width:100%;overflow:hidden;}
+.HotDogPts{width:100%;overflow:hidden;}
+.HotDogPtsItem,.HotCatPtsItem{width:100%;overflow:hidden;margin-top:5px;}
+.HotDogPtsItem .HotItemImg,.HotCatPtsItem .HotItemImg{width:50px;height:50px;float:left;}
+.HotDogPtsItem .HotItemImg .mas,.HotCatPtsItem .HotItemImg .mas{display:none;}
+.HotDogPtsItem .HotItemImg .liulan,.HotCatPtsItem .HotItemImg .liulan{display:none;}
+.HotDogPtsItem .HotItemInfo,.HotCatPtsItem .HotItemInfo{width:210px;margin-left:10px;float:left;text-align:left;}
+.HotDogPtsItem .HotItemInfo .hottitle,.HotCatPtsItem .HotItemInfo .hottitle{width:100%;height:25px;}
+.HotDogPtsItem .HotItemInfo .hottitle .xianshi,.HotCatPtsItem .HotItemInfo .hottitle .xianshi{display:none;}
+.HotDogPtsItem .HotItemInfo a,.HotCatPtsItem .HotItemInfo a{height:25px;line-height:25px;font-size:15px;}
+.HotDogPtsItem .HotItemInfo p,.HotCatPtsItem .HotItemInfo p{height:25px;line-height:25px;}
+
+.HotDogPtsItem.active .HotItemImg,.HotCatPtsItem.active .HotItemImg{width:100%;float:none;position:relative;height:auto;overflow:hidden;}
+.HotDogPtsItem.active .HotItemImg:hover,.HotCatPtsItem.active .HotItemImg:hover{transform: scale(1.2);-webkit-transform: scale(1.2);transition:all 0.4s;}
+.HotDogPtsItem.active .HotItemImg .mas,.HotCatPtsItem.active .HotItemImg .mas{display:block;position:absolute;left:0px;top:0px;height:100%;width:100%;opacity:0;transition:all 0.4s;background:#ccc;}
+.HotDogPtsItem.active .HotItemImg:hover .mas,.HotCatPtsItem.active .HotItemImg:hover .mas{opacity:0.7;}
+.HotDogPtsItem.active .HotItemImg .liulan,.HotCatPtsItem.active .HotItemImg .liulan{display:block;background:url(../Images/小图标/浏览.png) no-repeat;position:absolute;left:50%;top:50%;margin-left:-40px;margin-top:-40px;height:80px;width:80px;transition:all 0.4s;transform: scale(0.4);background-size:cover;opacity:0;
+  -webkit-transform: scale(0.4);}
+.HotDogPtsItem.active .HotItemImg:hover .liulan,.HotCatPtsItem.active .HotItemImg:hover .liulan{opacity:1;transform: scale(1.07);
+  -webkit-transform: scale(1.07);z-index:5;}
+.HotDogPtsItem.active .HotItemInfo,.HotCatPtsItem.active .HotItemInfo{float:none;width:100%;height:100px;text-align:center;background:rgba(51, 51, 51, 0.92);margin-left:0px;}
+.HotDogPtsItem.active .HotItemInfo span,.HotCatPtsItem.active .HotItemInfo span{margin-left:75px;}
+.HotDogPtsItem.active .HotItemInfo .hottitle,.HotCatPtsItem.active .HotItemInfo .hottitle{width:100%;height:70px;padding-top:30px;}
+.HotDogPtsItem.active:hover .HotItemInfo .hottitle .xianshi,.HotCatPtsItem.active:hover .HotItemInfo .hottitle .xianshi{display:block;background:url(../Images/小图标/icon_sprite.png);height:20px;width:20px;position:absolute;right:50px;top:40px;    background-position: -180px -100px;}
+.HotDogPtsItem.active:hover .HotItemInfo,.HotCatPtsItem.active:hover .HotItemInfo{background-color: #31c27c !important;}
+.HotDogPtsItem.active .HotItemInfo .hottitle a:hover,.HotCatPtsItem.active .HotItemInfo .hottitle a:hover{color:red;}
